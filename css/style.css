@@ -1,0 +1,18 @@
+body{ font-family: MontForAnker; background: url(../images/bgImage.webp)no-repeat; background-attachment: fixed; background-size: contain; background-position: top right 15%;}
+
+h2{ font-size: 38px; line-height: 1.2; font-weight: 800; margin: 0;}
+p{ margin: 0; font-size: 16px; line-height: 1.2; font-weight: 500;}
+a{ text-decoration: none;}
+.padT100{ padding-top: 100px;}
+img{ max-width: 100%;}
+
+.topAdvertise{ padding: 10px 0;}
+.topAdvertise .topAdvertiseText{ display: flex; justify-content: center; gap: 5px; align-items: center; align-items: center; color: #17bbef;}
+.topAdvertise .topAdvertiseText svg{ height: 20px;}
+.topAdvertise .topAdvertiseText p{ font-size: 14px;}
+.mainTitle{ text-align: center; margin-bottom: 60px;}
+.mainTitle p{ font-weight: 600; font-size: 18px;}
+
+.perfectSoundProduct{ display: flex; flex-wrap: wrap; gap: 16px;}
+.perfectSoundProduct .perfectSoundProductBox.bigbanner{ width: 100%; position: relative;  }
+.perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductText{ position: absolute; color: #000; inset: 0; margin: auto; height: fit-content; max-width: 400px; margin-left: 150px; display: flex; flex-direction: column; gap: 16px;}

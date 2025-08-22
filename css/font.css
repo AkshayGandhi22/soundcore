@@ -1,0 +1,95 @@
+@font-face {
+    font-family: MontForAnker;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-Book.otf?v=1733973592) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-Regular.otf?v=1733973650) format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-SemiBold.otf?v=1733973864) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: normal;
+    font-weight: 800;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-Bold.otf?v=1733974032) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-Heavy.otf?v=1733974032) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-Black.otf?v=1733974032) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: italic;
+    font-weight: 500;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-BookItalic.otf?v=1733974278) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: italic;
+    font-weight: 600;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-RegularItalic.otf?v=1733974278) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: Mont;
+    font-style: italic;
+    font-weight: 700;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-SemiBoldItalic.otf?v=1733974278) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: italic;
+    font-weight: 800;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-BoldItalic.otf?v=1733974278) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: italic;
+    font-weight: 900;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-HeavyItalic.otf?v=1733974278) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MontForAnker;
+    font-style: italic;
+    font-weight: 900;
+    src: url(https://cdn.shopify.com/s/files/1/0501/7678/6607/files/Mont-BlackItalic.otf?v=1733974278) format("woff");
+    font-display: swap
+}
