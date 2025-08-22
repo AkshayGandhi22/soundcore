@@ -1,11 +1,23 @@
-body{ font-family: MontForAnker; background: url(../images/bgImage.webp)no-repeat; background-attachment: fixed; background-size: contain; background-position: top right 15%;}
+body{ color: #000; font-family: MontForAnker; background: url(../images/bgImage.webp)no-repeat; background-attachment: fixed; background-size: contain; background-position: top right 15%;}
 
 h2{ font-size: 38px; line-height: 1.2; font-weight: 800; margin: 0;}
+h3{ font-size: 32px; line-height: 1.2; font-weight: 800; margin: 0;}
+h4{ font-size: 24px; line-height: 1.2; font-weight: 800; margin: 0;}
 p{ margin: 0; font-size: 16px; line-height: 1.2; font-weight: 500;}
 a{ text-decoration: none;}
 .padT100{ padding-top: 100px;}
 img{ max-width: 100%;}
 
+.button{ border: none; overflow: hidden; position: relative; display: inline-block; min-width: 150px; padding: 0 20px; min-height: 40px; background-color: #17bbef; width: fit-content; display: flex; align-items: center; justify-content: center; gap: 10px; border-radius: 20px; color: #fff; font-size: 14px;}
+.button svg{ width: 22px;}
+.button:hover{ color: #fff;}
+.button::after{ content: ''; position: absolute; height: 100%; width: 100%; left: -100%; transition: all 0.5S linear; background-color:#48cffa; border-radius: 20px;  }
+.button:hover::after{ left: 0;}
+.button span{ position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 10px;}
+.textBtn{ display: flex; align-items: center; color: #17bbef; font-weight: 700;}
+.textBtn:hover{ color:#48cffa;}
+.textBtn svg{ height: 16px;}
+ 
 .topAdvertise{ padding: 10px 0;}
 .topAdvertise .topAdvertiseText{ display: flex; justify-content: center; gap: 5px; align-items: center; align-items: center; color: #17bbef;}
 .topAdvertise .topAdvertiseText svg{ height: 20px;}
@@ -13,6 +25,34 @@ img{ max-width: 100%;}
 .mainTitle{ text-align: center; margin-bottom: 60px;}
 .mainTitle p{ font-weight: 600; font-size: 18px;}
 
-.perfectSoundProduct{ display: flex; flex-wrap: wrap; gap: 16px;}
-.perfectSoundProduct .perfectSoundProductBox.bigbanner{ width: 100%; position: relative;  }
-.perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductText{ position: absolute; color: #000; inset: 0; margin: auto; height: fit-content; max-width: 400px; margin-left: 150px; display: flex; flex-direction: column; gap: 16px;}
+.perfectSoundProduct{ display: flex; flex-wrap: wrap; gap: 16px; }
+.perfectSoundProduct .perfectSoundProductBox.bigbanner{ width: 100%; position: relative; text-align: left; padding: 0; }
+.perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductText{ position: absolute; color: #000; inset: 0; margin: auto; height: fit-content; max-width: 400px; margin-left: 150px;  gap: 16px;}
+.perfectSoundProduct .perfectSoundProductBox{ border-radius: 16px; overflow: hidden; width: calc(33.33% - 10.66px); background-color: #f1f8fa; padding: 56px; text-align: center;}
+.perfectSoundProduct .perfectSoundProductBox .perfectSoundProductText{ display: flex; flex-direction: column; gap: 8px; }
+.perfectSoundProduct .perfectSoundProductBox .perfectSoundProductText .textBtn{ margin: 0 auto;}
+
+.popularProductsSliderBox{ background-color: #f1f8fa; padding: 30px; border-radius: 20px;} 
+.popularProductsSlider{ max-width: 80%; margin: 0 auto; color: #000;}
+.popularProductsSlider .popularProductsBox{ margin: 0 8px; background-color: #fff; border-radius: 8px; overflow: hidden;}
+.popularProductsSlider .popularProductsBox .popularProductsText{ padding: 12px 16px;}
+.popularProductsSlider .popularProductsBox .popularProductsText .priceSection{ margin-top: 16px; position: relative; min-height: 40px; display: flex; align-items: center;}
+.popularProductsSlider .popularProductsBox .popularProductsText .priceSection p{ font-size: 20px; font-weight: 600;}
+.popularProductsSlider .popularProductsBox .popularProductsText .priceSection p span{ font-size:16px; color: #aaaaaa; text-decoration-line: line-through;}
+.popularProductsSlider .popularProductsBox .popularProductsText .priceSection .button{ font-size: 20px; width: 100%; position: absolute; top: 0; opacity: 0;}
+.popularProductsSlider .popularProductsBox:hover .popularProductsText .priceSection .button{ opacity: 1;}
+.headphoneBrand{ border-radius: 16px; overflow: hidden;}
+
+.knowUsBetter{ max-width: 864px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px;} 
+.knowUsBetter .knowUsBetterBox{ width: calc(50% - 16px); border-radius: 16px; overflow: hidden;}
+.knowUsBetter .knowUsBetterBox .knowUsBetterImg{ position: relative;}
+.knowUsBetter .knowUsBetterBox .knowUsBetterImg a{ position: absolute; height: 100%; width: 100%; inset:0; margin: auto; padding: 20px; display: flex; align-items: flex-end;  background: linear-gradient(0deg, #2020208f 0%,  #69696900 100%);}
+.knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg a{ background: linear-gradient(0deg, #202020da 0%,  #6969692f 100%); }
+.knowUsBetter .knowUsBetterBox .knowUsBetterImg  a .knowUsBetterText{ color: #fff; position: relative ; bottom: -70px; transition: all 0.5s linear;}
+.knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg  a .knowUsBetterText{ bottom: 0;}
+.knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg .knowUsBetterText p, .knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg .knowUsBetterText .textBtn{ opacity: 1;}
+.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn{ margin-top: 10px;  opacity: 0; transition: all 0.5s linear;}
+.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn svg{ transition: all 0.2s linear;}
+.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn:hover svg{ transform: translateX(10px);}
+.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText p{ font-size: 18px; opacity: 0; transition: all 0.5s linear;}
+
