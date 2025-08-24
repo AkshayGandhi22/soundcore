@@ -18,12 +18,62 @@
 </head>
 <body class="<?php echo $isRTL == "rtl" ? 'rtl' : 'ltr'; ?>">
     
+
     <div class="topAdvertise">
         <div class="container">
             <a href="#" class="topAdvertiseText">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-[20px] w-[20px] shrink-0 stroke-brand"><path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"></path></svg>
                 <p>soundcore x Żywiec Męskie Granie | Enjoy the ultimate music journey and Win Big!</p>
             </a>
+        </div>
+    </div>
+    <div class="mainBannerSection">
+        <div class="container">
+            <div class="mainSlider slider_arrow">
+                <div>
+                    <div class="perfectSoundProductBox bigbanner">
+                        <div class="perfectSoundProductImg">
+                            <img src="images/banner1.webp" alt="">
+                            <img src="images/banner1-1.webp" alt="">
+                        </div>
+                        <div class="perfectSoundProductText">
+                            <p><b>Liberty 5</b></p>
+                            <h2>Quiet the Crowd, Enjoy the Journey</h2>
+                            <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
+                            <a href="#" class="button"><span>Buy Now</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="perfectSoundProductBox bigbanner whiteColor">
+                        <div class="perfectSoundProductImg">
+                            <img src="images/banner2.webp" alt="">
+                            <img src="images/banner2-2.jpg" alt="">
+                        </div>
+                        <div class="perfectSoundProductText">
+                            <p><b>Liberty 5</b></p>
+                            <h2>Quiet the Crowd, Enjoy the Journey</h2>
+                            <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
+                            <a href="#" class="button"><span>Buy Now</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="perfectSoundProductBox bigbanner">
+                        <div class="perfectSoundProductImg">
+                            <img src="images/banner1.webp" alt="">
+                            <img src="images/banner1-1.webp" alt="">
+                        </div>
+                        <div class="perfectSoundProductText">
+                            <p><b>Liberty 5</b></p>
+                            <h2>Quiet the Crowd, Enjoy the Journey</h2>
+                            <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
+                            <a href="#" class="button"><span>Buy Now</span></a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
         </div>
     </div>
     <div class="perfectSoundSection padT100">
@@ -36,6 +86,7 @@
                 <div class="perfectSoundProductBox bigbanner">
                     <div class="perfectSoundProductImg">
                         <img src="images/liberty.webp" alt="">
+                        <img src="images/liberty-1.webp" alt="">
                     </div>
                     <div class="perfectSoundProductText">
                         <p><b>Liberty 5</b></p>
@@ -44,7 +95,7 @@
                         <a href="#" class="button"><span>Buy Now</span></a>
                     </div>
                 </div>
-                <div class="perfectSoundProductBox">
+                <div class="perfectSoundProductBox smallbox">
                     <div class="perfectSoundProductText">
                         <p><b>Space One Pro</b></p>
                         <h3>Super Foldable Headphones</h3>
@@ -84,7 +135,7 @@
                 <p>Here are some of our most popular products</p>
             </div>
             <div class="popularProductsSliderBox">
-                <div class="popularProductsSlider">
+                <div class="popularProductsSlider slider_arrow">
                     <div>
                         <div class="popularProductsBox">
                             <img src="images/product1.webp" alt="product">
@@ -166,6 +217,7 @@
             <div class="headphoneBrand">
                 <a href="#">
                     <img src="images/headphoneBrand.webp" alt="headphoneBrand">
+                    <img src="images/headphoneBrand-1.webp" alt="headphoneBrand">
                 </a>
             </div>
         </div>
@@ -200,6 +252,111 @@
                             </div>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="World_leading_Section">
+        <div class="container">
+            <div class="World_leading_Container">
+                <div class="World_leading_box">
+                    <img src="images/data-icon-1.webp" alt="icon">
+                    <p>Incredible sound loved by 30 million+ people.</p>
+                </div>
+                <div class="line"></div>
+                <div class="World_leading_box">
+                    <img src="images/data-icon-2.webp" alt="icon">
+                    <p>World-leading audio technology, including SweatGuard, BassUp, ACAA, and HearID.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="padT100">
+        <div class="container">
+            <div class="mainTitle">
+                <h2>Don't Just Take Our Word For It</h2>
+                <p>Hear what others are saying about soundcore.</p>
+            </div>
+            <div class="take_Word_Slider slider_dot slider_arrow">
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="padT100">
+        <div class="container">
+            <div class="mediaLogoContainer">
+                <div class="mediaLogo">
+                    <img src="images/media-1.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-2.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-3.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-4.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-5.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-6.webp" alt="">
                 </div>
             </div>
         </div>

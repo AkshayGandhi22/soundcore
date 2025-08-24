@@ -3,6 +3,7 @@ body{ color: #000; font-family: MontForAnker; background: url(../images/bgImage.
 h2{ font-size: 38px; line-height: 1.2; font-weight: 800; margin: 0;}
 h3{ font-size: 32px; line-height: 1.2; font-weight: 800; margin: 0;}
 h4{ font-size: 24px; line-height: 1.2; font-weight: 800; margin: 0;}
+h5{ font-size: 20px; line-height: 1.2; font-weight: 700; margin: 0;}
 p{ margin: 0; font-size: 16px; line-height: 1.2; font-weight: 500;}
 a{ text-decoration: none;}
 .padT100{ padding-top: 100px;}
@@ -17,42 +18,220 @@ img{ max-width: 100%;}
 .textBtn{ display: flex; align-items: center; color: #17bbef; font-weight: 700;}
 .textBtn:hover{ color:#48cffa;}
 .textBtn svg{ height: 16px;}
+
+.navigation{ padding: 20px 0; position: relative; z-index: 2; background-color: #fff;}
+.subnavigation{ display: none;}
+.navigationSection { display: flex; flex-wrap: wrap; align-items: center;}
+.navigationSection .mainLogo img{ max-width: 200px;}
+.navigationSection .navigationMenu{ margin-left: 64px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center;}
+.navigationSection .navigationMenu a{ color: #000; font-size: 14px; font-weight: 700; padding: 30px 0;}
+.navigationSection .navigationMenu .navigationLink:hover .nav_link  + .subnavigation{ display: block; position: absolute; top: 100%; width: 100%; z-index: 1; left: 0; background-color: #fff; border-top: 1px solid #bdbdbd; border-radius: 0 0 16px 16px;}
+.subnavigation .subnavigationLinks{ display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding-top: 50px; padding-bottom: 30px; }
+.subnavigation .subnavigationLinks .sub_nav_link{ width: calc(33.33% - 13.33px); border-radius: 16px; overflow: hidden; padding: 0;}
+body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position: absolute; top: 0; width: 100%; height: 100%; background-color: #00000087;}
  
-.topAdvertise{ padding: 10px 0;}
+.topAdvertise{ padding: 10px 0; background-color: #fff; position: relative; z-index: 2;}
 .topAdvertise .topAdvertiseText{ display: flex; justify-content: center; gap: 5px; align-items: center; align-items: center; color: #17bbef;}
 .topAdvertise .topAdvertiseText svg{ height: 20px;}
 .topAdvertise .topAdvertiseText p{ font-size: 14px;}
 .mainTitle{ text-align: center; margin-bottom: 60px;}
 .mainTitle p{ font-weight: 600; font-size: 18px;}
+.mainTitle.left{ text-align: left;}
 
 .perfectSoundProduct{ display: flex; flex-wrap: wrap; gap: 16px; }
-.perfectSoundProduct .perfectSoundProductBox.bigbanner{ width: 100%; position: relative; text-align: left; padding: 0; }
-.perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductText{ position: absolute; color: #000; inset: 0; margin: auto; height: fit-content; max-width: 400px; margin-left: 150px;  gap: 16px;}
-.perfectSoundProduct .perfectSoundProductBox{ border-radius: 16px; overflow: hidden; width: calc(33.33% - 10.66px); background-color: #f1f8fa; padding: 56px; text-align: center;}
-.perfectSoundProduct .perfectSoundProductBox .perfectSoundProductText{ display: flex; flex-direction: column; gap: 8px; }
-.perfectSoundProduct .perfectSoundProductBox .perfectSoundProductText .textBtn{ margin: 0 auto;}
+.perfectSoundProductBox.bigbanner{ width: 100%; position: relative; text-align: left; padding: 0; }
+.perfectSoundProductBox.bigbanner .perfectSoundProductText{ position: absolute; color: #000; inset: 0; margin: auto; height: fit-content; max-width: 400px; margin-left: 150px;  gap: 16px;}
+.perfectSoundProductBox{ border-radius: 16px; overflow: hidden; width: calc(33.33% - 10.66px); background-color: #f1f8fa; padding: 56px; text-align: center;}
+.perfectSoundProductBox .perfectSoundProductText{ display: flex; flex-direction: column; gap: 8px; }
+.perfectSoundProductBox .perfectSoundProductText .textBtn{ margin: 0 auto;}
+
+.perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductImg img:nth-child(2){display: none;}
 
 .popularProductsSliderBox{ background-color: #f1f8fa; padding: 30px; border-radius: 20px;} 
 .popularProductsSlider{ max-width: 80%; margin: 0 auto; color: #000;}
-.popularProductsSlider .popularProductsBox{ margin: 0 8px; background-color: #fff; border-radius: 8px; overflow: hidden;}
-.popularProductsSlider .popularProductsBox .popularProductsText{ padding: 12px 16px;}
-.popularProductsSlider .popularProductsBox .popularProductsText .priceSection{ margin-top: 16px; position: relative; min-height: 40px; display: flex; align-items: center;}
-.popularProductsSlider .popularProductsBox .popularProductsText .priceSection p{ font-size: 20px; font-weight: 600;}
-.popularProductsSlider .popularProductsBox .popularProductsText .priceSection p span{ font-size:16px; color: #aaaaaa; text-decoration-line: line-through;}
-.popularProductsSlider .popularProductsBox .popularProductsText .priceSection .button{ font-size: 20px; width: 100%; position: absolute; top: 0; opacity: 0;}
-.popularProductsSlider .popularProductsBox:hover .popularProductsText .priceSection .button{ opacity: 1;}
+.popularProductsBox{ margin: 0 8px; background-color: #fff; border-radius: 8px; overflow: hidden;}
+.popularProductsBox .popularProductsText{ padding: 12px 16px;}
+.popularProductsBox .popularProductsText .priceSection{ margin-top: 16px; position: relative; min-height: 40px; display: flex; align-items: center;}
+.popularProductsBox .popularProductsText .priceSection p{ font-size: 20px; font-weight: 600;}
+.popularProductsBox .popularProductsText .priceSection p span{ font-size:16px; color: #aaaaaa; text-decoration-line: line-through;}
+.popularProductsBox .popularProductsText .priceSection .button{ font-size: 20px; width: 100%; position: absolute; top: 0; opacity: 0;}
+.popularProductsBox:hover .popularProductsText .priceSection .button{ opacity: 1;}
 .headphoneBrand{ border-radius: 16px; overflow: hidden;}
+.headphoneBrand img:nth-child(2){ display: none;}
+.popularProductsSlider .slick-prev{ left: -80px;}
+.popularProductsSlider .slick-next{ right: -80px;}
+.popularProductsSlider.slider_arrow .slick-next, .popularProductsSlider.slider_arrow .slick-prev{ opacity: 0.5;}
+.popularProductsSlider.slider_arrow .slick-next:hover, .popularProductsSlider.slider_arrow .slick-prev:hover{ opacity: 1;}
 
+
+.mainSlider .slick-dots{ bottom: 0;}
+.mainSlider .slick-dots li{margin: 0; padding: 0;}
+.mainSlider .slick-dots li button{margin: 0; padding: 0; width: 8px; height: 8px; border-radius: 8px; background-color: #bdbdbd; }
+.mainSlider .slick-dots li button:before{ display: none;}
+.mainSlider .slick-dots li.slick-active button{ background-color: #17bbef;}
+.mainSlider .slick-prev{ left: 20px; z-index: 1;}
+.mainSlider .slick-next{ right: 20px; z-index: 1;}
+.mainSlider.slider_arrow .slick-next, .mainSlider.slider_arrow .slick-prev{ opacity: 0;}
+.mainSlider.slider_arrow:hover .slick-next, .mainSlider.slider_arrow:hover .slick-prev{ opacity: 0.5;}
+.mainSlider.slider_arrow .slick-next:hover, .mainSlider.slider_arrow .slick-prev:hover{ opacity: 0.8;}
+.mainSlider.slider_arrow:hover .perfectSoundProductBox.bigbanner img{ scale: 1.2;}
+.mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img{transition: all 0.5s linear;}
+.mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img:nth-child(2){ display: none;}
+
+
+.perfectSoundProductBox.bigbanner.whiteColor .perfectSoundProductText{ color: #fff;}
 .knowUsBetter{ max-width: 864px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px;} 
-.knowUsBetter .knowUsBetterBox{ width: calc(50% - 16px); border-radius: 16px; overflow: hidden;}
-.knowUsBetter .knowUsBetterBox .knowUsBetterImg{ position: relative;}
-.knowUsBetter .knowUsBetterBox .knowUsBetterImg a{ position: absolute; height: 100%; width: 100%; inset:0; margin: auto; padding: 20px; display: flex; align-items: flex-end;  background: linear-gradient(0deg, #2020208f 0%,  #69696900 100%);}
-.knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg a{ background: linear-gradient(0deg, #202020da 0%,  #6969692f 100%); }
-.knowUsBetter .knowUsBetterBox .knowUsBetterImg  a .knowUsBetterText{ color: #fff; position: relative ; bottom: -70px; transition: all 0.5s linear;}
-.knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg  a .knowUsBetterText{ bottom: 0;}
-.knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg .knowUsBetterText p, .knowUsBetter .knowUsBetterBox:hover .knowUsBetterImg .knowUsBetterText .textBtn{ opacity: 1;}
-.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn{ margin-top: 10px;  opacity: 0; transition: all 0.5s linear;}
-.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn svg{ transition: all 0.2s linear;}
-.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn:hover svg{ transform: translateX(10px);}
-.knowUsBetter .knowUsBetterBox .knowUsBetterImg .knowUsBetterText p{ font-size: 18px; opacity: 0; transition: all 0.5s linear;}
+.knowUsBetterBox{ width: calc(50% - 16px); border-radius: 16px; overflow: hidden;}
+.knowUsBetterBox .knowUsBetterImg{ position: relative;}
+.knowUsBetterBox .knowUsBetterImg a{ position: absolute; height: 100%; width: 100%; inset:0; margin: auto; padding: 20px; display: flex; align-items: flex-end;  background: linear-gradient(0deg, #2020208f 0%,  #69696900 100%);}
+.knowUsBetterBox:hover .knowUsBetterImg a{ background: linear-gradient(0deg, #202020da 0%,  #6969692f 100%); }
+.knowUsBetterBox .knowUsBetterImg  a .knowUsBetterText{ color: #fff; position: relative ; bottom: -70px; transition: all 0.5s linear;}
+.knowUsBetterBox:hover .knowUsBetterImg  a .knowUsBetterText{ bottom: 0;}
+.knowUsBetterBox:hover .knowUsBetterImg .knowUsBetterText p, .knowUsBetterBox:hover .knowUsBetterImg .knowUsBetterText .textBtn{ opacity: 1;}
+.knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn{ margin-top: 10px;  opacity: 0; transition: all 0.5s linear;}
+.knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn svg{ transition: all 0.2s linear;}
+.knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn:hover svg{ transform: translateX(10px);}
+.knowUsBetterBox .knowUsBetterImg .knowUsBetterText p{ font-size: 18px; opacity: 0; transition: all 0.5s linear;}
 
+.World_leading_Section{ margin-top: 100px; background-color: #17bbef; min-height: 540px; display: flex; align-items: center;}
+.World_leading_Section .World_leading_Container{ display: flex; justify-content: center; gap: 40px;}
+.World_leading_Section .World_leading_Container .line{ width: 1px; background-color: #fff;}
+.World_leading_Section .World_leading_box{ display: flex; flex-direction: column; gap: 20px; max-width: 290px; width: 100%; text-align: center;}
+.World_leading_Section .World_leading_box img{ max-width: 60px; margin: 0 auto;}
+.World_leading_Section .World_leading_box p{color: #fff; font-size: 18px;}
+
+.take_Word_Slider .knowUsBetterBox{ width: auto; margin: 0 8px;}
+.mediaLogoContainer{ display: flex; flex-wrap: wrap; gap: 30px;}
+.mediaLogoContainer .mediaLogo{ width: calc(16.66% - 25px); border-radius: 16px; overflow: hidden; background-color: #fff;}
+
+.slider_dot .slick-dots{ position: unset; padding: 0; margin: 0 auto; display: flex; max-width: 612px; margin-top: 55px; }
+.slider_dot .slick-dots li{ margin: 0; padding: 0; flex: 1;}
+.slider_dot .slick-dots li button{ margin: 0; padding: 0; width: 100%; height: 4px; background-color: #e5e7eb;}
+.slider_dot .slick-dots li.slick-active button{ background-color: #17bbef;}
+.slider_dot .slick-dots li button:before{ display: none;}
+.slider_arrow .slick-prev, .slider_arrow .slick-next{  height: 50px; width: 50px; background-color: #17bbef; border: 1px solid #17bbef; border-radius: 50px; opacity: 1; }
+.slider_arrow .slick-prev:before, .slider_arrow .slick-next:before { content: ''; opacity: 1; background: url(../images/slideArrow.svg) no-repeat; background-size: contain; z-index: 1; position: absolute; width: 20px; height: 20px; display: block; inset: 0; margin: auto; filter: brightness(10);}
+.slider_arrow .slick-next:before{transform: rotate(180deg);}
+
+.take_Word_Slider.slider_arrow .slick-prev, .take_Word_Slider.slider_arrow .slick-next{top: -40px; left: auto; right: 20px;}
+.take_Word_Slider.slider_arrow .slick-prev:hover, .take_Word_Slider.slider_arrow .slick-next:hover{ background-color: #fff; }
+.take_Word_Slider.slider_arrow .slick-prev:hover:before , .take_Word_Slider.slider_arrow .slick-next:hover:before {filter: unset; }
+.take_Word_Slider.slider_arrow .slick-prev{ right: 80px;}
+
+.overviewContainer{ display: flex; flex-wrap: wrap; margin: -8px; } 
+.overviewContainer .overviewBox{ position: relative; border-radius: 16px; overflow: hidden;}
+.overviewContainer .overviewBox img{ width: 100%;}
+.overviewContainer .overviewBox .overviewText{ position: absolute; inset: 0; width: 100%; height: 100%; padding: 24px;}
+.overviewContainer .one{ width: 25%;  padding: 8px;}
+.overviewContainer .two{ width: 50%;  padding: 8px;}
+.overviewContainer .three{ width: 75%;  padding: 8px;}
+
+.whiteText{ color: #fff !important;} 
+.quiettheCrowd{ position: relative;}
+.quiettheCrowd img:nth-child(2){ display: none;}
+.quiettheCrowd .quiettheCrowdText{ position: absolute; inset: 0; margin: auto; width: 100%; height: 100%;}
+.quiettheCrowdText h2{ font-size: 56px;}
+
+.productSpec  .productSpecBox + .productSpecBox{ margin-top: 96px; }
+.productSpec  .productSpecBox {display: flex; flex-wrap: wrap; gap: 80px; align-items: center;}
+.productSpec  .productSpecBox .productSpecText{ width: calc(40% - 40px); display: flex; flex-direction: column; gap: 16px;}
+.productSpec  .productSpecBox .productSpecImg{ width: calc(60% - 40px); border-radius: 16px; overflow: hidden;}
+.productSpec  .productSpecBox:nth-child(even){ flex-direction: row-reverse;}
+
+.specsTable tbody{ border: 1px solid #e8e8e8; display: flex; flex-wrap: wrap;}
+.specsTable tr{ width: 50%; display: flex; }
+.specsTable tr td{ width: 50%; padding: 24px; border-top:1px solid #e8e8e8; color: rgb(89, 89, 89); border-right:1px solid #e8e8e8; display: flex; align-items: center; font-weight: 700;}
+.specsTable tr td:first-child{ color: #999;}
+
+.product_Liberty_Section{ overflow: hidden;}
+.product_Liberty_Container{ display: flex; flex-wrap: wrap; gap: 90px;}
+.product_Liberty_Container .productSlider, .product_Liberty_Container .productContent{ width: calc(50% - 45px);} 
+.product_Liberty_Container .productSlider{ position: sticky; top: 0; height: fit-content;}
+.product_Liberty_Container .productContent{ display: flex; flex-direction: column; gap: 16px;}
+.productContent .pricingText h3 span{ font-size: 14px; color: #ffa800; padding: 5px; border: 1px solid #ffa800; }
+.productContent .pricingText h3 { display: flex; align-items: center; gap: 10px;}
+.color_radio h5{ font-weight: 700; }
+.color_radio h5 span{ font-size: 16px; color: #777;}
+.color_radio .color_radio_input label input{ display: none;}
+.color_radio .color_radio_input { display: flex; gap: 25px;}
+.color_radio .color_radio_input label img{ height: 36px; }
+.color_radio .color_radio_input label { padding: 5px; border: 1px solid transparent; border-radius: 50px;}
+.color_radio .color_radio_input label:has(input:checked){ border-color: #17bbef;}
+.services_benefits .services_benefits_Box{ background-color: #f7f8fa; padding: 16px; border-radius: 8px; display: flex; flex-wrap: wrap; gap: 20px; margin-top: 10px;}
+.services_benefits .services_benefits_Box .services_benefits_text{ display: flex; gap: 10px; width: calc(50% - 10px);}
+.services_benefits .services_benefits_Box .services_benefits_text img{ height: 20px;}
+
+.want_perks_accodion{ padding-bottom: 10px; border-bottom: 1px solid #aaaaaa;}
+.want_perks_accodion .accordion-button{ padding: 0; background-color: transparent !important; color: #000 !important; font-size: 16px;}
+.want_perks_accodion .accordion-button a{ text-decoration: underline; color: #000; margin-left: 5px;}
+.want_perks_accodion .accordion{     --bs-accordion-border-width: 0px; --bs-accordion-bg: transparent; --bs-accordion-border-radius: 0; --bs-accordion-inner-border-radius:0;}
+.want_perks_accodion .accordion-button:focus{ box-shadow: none;}
+.want_perks_accodion .accordion-body ol{ margin: 0; padding: 0;}
+
+@media(width <= 991.98px) {
+    .mainTitle h2{ font-size: 28px;}
+    .mainTitle p{ font-size: 16px;}
+    .mainBannerSection .container{ padding: 0; margin: 0; max-width: 100%;}
+    .perfectSoundProductBox.bigbanner .perfectSoundProductText{ margin-left: 50px;}
+    .mainSlider .perfectSoundProductBox{ border-radius: 0;}
+    .perfectSoundProduct .perfectSoundProductText h2{ font-size: 24px;}
+    .perfectSoundProduct .perfectSoundProductText h3{ font-size: 24px;}
+    .perfectSoundSection .perfectSoundProductBox{ width: calc(50% - 8px);}
+    .perfectSoundSection .perfectSoundProductBox.smallbox, .perfectSoundProductBox.bigbanner{ width: 100%; }
+    .perfectSoundSection .perfectSoundProductBox.smallbox{display: flex; flex-direction: row-reverse; align-items: center;}
+     .perfectSoundSection .perfectSoundProductBox.smallbox .perfectSoundProductText,.perfectSoundSection .perfectSoundProductBox.smallbox .perfectSoundProductImg{ width: 50%;}
+     .perfectSoundSection .perfectSoundProductBox.smallbox .perfectSoundProductText{ text-align: left;}
+     .perfectSoundSection .perfectSoundProductBox.smallbox .perfectSoundProductText .textBtn{ margin: 0;}
+     .perfectSoundSection .perfectSoundProductBox.smallbox { padding: 20px 30px; }
+     .product_Liberty_Container .productSlider, .product_Liberty_Container .productContent {  width:100%; }
+     .product_Liberty_Container .productSlider{ position: relative;}
+     .product_Liberty_Container{ gap: 30px;}
+     .overviewContainer .overviewBox .overviewText h4{ font-size: 20px;}
+     .productSpec .productSpecBox .productSpecText, .productSpec .productSpecBox .productSpecImg{ width: 100%;}
+     .productSpec .productSpecBox{ gap: 30px;}
+     
+ 
+}
+@media(width <= 767.98px) {
+    body{     background-size: 300px;  background-position: right bottom;}
+    .container{ max-width: 100%;} 
+    h2{ font-size: 30px;}
+     .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img:nth-child(2){ display: block;}
+    .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img:first-child{ display: none;}
+    .mainSlider .perfectSoundProductBox.bigbanner .perfectSoundProductText{ top: 20px; bottom: auto;}
+    .mainSlider .perfectSoundProductBox.bigbanner .perfectSoundProductText{ margin-left: 20px;}
+    .perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductImg img:nth-child(2){display: block;}
+    .perfectSoundProduct .perfectSoundProductBox{ background-color: transparent;}
+    .perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductImg img:first-child{display: none;}
+    .perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductText{ position: unset; padding: 0; background-color: transparent;  max-width: 300px; margin: 0; margin-top: 20px;}
+    .knowUsBetterBox .knowUsBetterImg a .knowUsBetterText{ bottom: 0;}
+    .knowUsBetterBox .knowUsBetterImg .knowUsBetterText p, .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn{ opacity: 1;}
+    .knowUsBetterBox .knowUsBetterImg .knowUsBetterText p{ font-size: 14px;}
+    .knowUsBetterBox .knowUsBetterImg .knowUsBetterText h4{ font-size: 18px;}
+    .take_Word_Slider .knowUsBetterBox .knowUsBetterImg{ height: 360px;}
+    .knowUsBetterBox .knowUsBetterImg img{ height: 100%; object-fit: cover; object-position: center; width: 100%;}
+    .perfectSoundSection .perfectSoundProductBox { flex-direction: column-reverse !important; display: flex; width: 100% !important; padding: 0 !important;}
+    .perfectSoundSection .perfectSoundProductBox .perfectSoundProductImg{ width: 100% !important; background-color: #f1f8fa; border-radius: 16px;}
+    .perfectSoundProductBox.bigbanner{ display: block !important;}
+    .perfectSoundProduct{ gap: 65px;}
+    .perfectSoundProductBox .perfectSoundProductText{ margin-right: auto; text-align: left !important; margin-top: 20px;}
+    .perfectSoundProductBox .perfectSoundProductText .textBtn{ margin: 0;}
+    .headphoneBrand img:nth-child(2){ display: block;}
+    .headphoneBrand img:first-child{ display: none;}
+    .World_leading_Section .World_leading_Container{ flex-direction: column; align-items: center;}
+    .World_leading_Section .World_leading_Container .line{ width: 50%; height: 1px;}
+    .mediaLogoContainer .mediaLogo{ width: calc(33.33% - 20px);}
+    .overviewContainer .three{ width: 100%;}
+    .overviewContainer .one{ width: 50%;}
+    .overviewContainer .overviewBox{ height: 250px;}
+    .overviewContainer .overviewBox img{ height: 100%; object-fit: cover;}
+    .quiettheCrowd img:nth-child(2){ display: block;}
+    .quiettheCrowd img:first-child{ display: none;}
+    .specsTable tr{ width: 100%;}
+} 
+@media(width <= 567.98px) {
+    .knowUsBetterBox{ width: 100%;}
+    .knowUsBetterBox .knowUsBetterImg{ height: auto;}
+    .popularProductsSliderBox{ padding: 30px 0;}
+    .overviewContainer .one, .overviewContainer .two{ width: 100%;}
+}
