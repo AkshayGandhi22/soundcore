@@ -70,3 +70,10 @@ $('.productSlider').slick({
   slidesToShow: 1,
   slidesToScroll: 1
 });
+
+$(".mobileToggle").on("click", function() {
+      $(".mobileNavigationMenu").toggleClass("show");
+});
+$(".canvas_back_btn").on("click", function() {
+      $(".mobileNavigationMenu").toggleClass("show");
+});

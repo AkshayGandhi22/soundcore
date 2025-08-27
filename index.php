@@ -27,6 +27,94 @@
             </a>
         </div>
     </div>
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigationSection">
+                <div class="mainLogo">
+                    <a href="#"><img src="images/logo.webp" alt="logo"></a>
+                </div>
+                <div class="navigationMenu">
+                    <div class="navigationLink">
+                        <a href="#" class="nav_link"> New Releases </a>
+                        <div class="subnavigation"> 
+                            <div class="container">
+                                <div class="subnavigationLinks">
+                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
+                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
+                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigationLink">
+                        <a href="#" class="nav_link"> Back to School </a>
+                        <div class="subnavigation"> 
+                            <div class="container">
+                                <div class="subnavigationLinks">
+                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
+                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
+                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="mobileNavigationSection">
+        <div class="container">
+            <div class="mobileNavigation">
+                <div class="mainLogo">
+                    <a href="#"><img src="images/logo.webp" alt="logo"></a>
+                </div>
+                <button class="mobileToggleMenu mobileToggle" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-[30px] w-[30px] "><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                </button>
+                <div class="mobileNavigationMenu">
+                    <div class="mobileNavigationMenuTop">
+                        <div class="container">
+                            <div class="mobileTop">
+                                <div class="mainLogo">
+                                    <a href="#"><img src="images/logo.webp" alt="logo"></a>
+                                </div>
+                                <button class="mobileToggleMenu mobileToggle" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-[30px] w-[30px] "><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mobileNavigationLink">
+                            <button data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">New Releases <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                            <button>Back to School <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- newReleaseOffCanvase -->
+     <div class="offcanvas offcanvas-start mobileSubMenu" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="backBtn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg>
+            </button>
+            <h5 class="offcanvas-title" id="staticBackdropLabel">New Releases</h5>
+            <button type="button" class="backBtn canvas_back_btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>            
+            </button>
+            
+        </div>
+        <div class="offcanvas-body">
+                <div class="subnavigationLinks">
+                        <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
+                        <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
+                        <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+                </div>
+        </div>
+    </div>
+    <!-- newReleaseOffCanvase -->
     <div class="mainBannerSection">
         <div class="container">
             <div class="mainSlider slider_arrow">

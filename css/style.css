@@ -29,6 +29,7 @@ img{ max-width: 100%;}
 .subnavigation .subnavigationLinks{ display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding-top: 50px; padding-bottom: 30px; }
 .subnavigation .subnavigationLinks .sub_nav_link{ width: calc(33.33% - 13.33px); border-radius: 16px; overflow: hidden; padding: 0;}
 body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position: absolute; top: 0; width: 100%; height: 100%; background-color: #00000087;}
+.mobileNavigationSection{ display: none;}
  
 .topAdvertise{ padding: 10px 0; background-color: #fff; position: relative; z-index: 2;}
 .topAdvertise .topAdvertiseText{ display: flex; justify-content: center; gap: 5px; align-items: center; align-items: center; color: #17bbef;}
@@ -77,6 +78,11 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .mainSlider.slider_arrow:hover .perfectSoundProductBox.bigbanner img{ scale: 1.2;}
 .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img{transition: all 0.5s linear;}
 .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img:nth-child(2){ display: none;}
+
+
+.productSlider.slider_arrow .slick-prev{ left: 20px; z-index: 1; opacity: 0; background-color: #000000be; border-color: #000000be;}
+.productSlider.slider_arrow .slick-next{ right: 20px; z-index: 1; opacity: 0; background-color: #000000be; border-color: #000000be;}
+.productSlider.slider_arrow:hover .slick-prev , .productSlider.slider_arrow:hover .slick-next{ opacity: 1; }
 
 
 .perfectSoundProductBox.bigbanner.whiteColor .perfectSoundProductText{ color: #fff;}
@@ -168,6 +174,14 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .want_perks_accodion .accordion-button:focus{ box-shadow: none;}
 .want_perks_accodion .accordion-body ol{ margin: 0; padding: 0;}
 
+.formDesign{ display: flex; flex-wrap: wrap; gap: 15px 30px; max-width: 800px; margin: 0 auto;}
+.formDesign .inputBox{ width: calc(50% - 15px); display: flex; flex-direction: column; gap: 5px;}
+.formDesign .inputBox input, .formDesign .inputBox select, .formDesign .inputBox textarea{ padding: 5px 10px; border-radius: 10px; border: 1px solid #000;}
+.formDesign .button {width: fit-content;}
+.formDesignSection{ padding: 50px 0;} 
+.payment_method_icon{ display: flex; flex-wrap: wrap }
+.payment_method p{ margin-bottom: 5px;}
+
 @media(width <= 991.98px) {
     .mainTitle h2{ font-size: 28px;}
     .mainTitle p{ font-size: 16px;}
@@ -190,7 +204,24 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
      .productSpec .productSpecBox .productSpecText, .productSpec .productSpecBox .productSpecImg{ width: 100%;}
      .productSpec .productSpecBox{ gap: 30px;}
      
- 
+    .navigation{ display: none;}
+    .mobileNavigationSection{ display: block; padding: 20px 0;}
+    .mobileNavigation{ display: flex; align-items: center; justify-content: space-between;}
+    .mobileNavigation .mainLogo{ max-width: 140px;}
+    .mobileNavigation .mobileToggleMenu{height: 30px; width: 30px; border: 1px solid #17bbef; color: #17bbef; border-radius: 30px; padding: 5px; display: flex; align-items: center; justify-content: center; background-color: transparent;}
+    .mobileNavigationMenu{ display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: #f7f8fa; z-index: 4;}
+    .mobileNavigationMenu.show{ display: block}
+    body:has(.mobileNavigationMenu.show){ overflow: hidden;}
+    .mobileNavigationMenu .mobileNavigationMenuTop {background-color: #fff; padding: 10px 0;}
+    .mobileNavigationMenu .mobileNavigationMenuTop .mobileTop{  display: flex; align-items: center; justify-content: space-between;}
+    .mobileNavigationLink{ display: flex; flex-direction: column; gap: 30px; margin-top: 40px;}
+    .mobileNavigationLink button{ display: flex; justify-content: space-between; border: none; background-color: transparent; padding: 0; font-size: 16px; font-weight: 700;}
+    .mobileNavigationLink button svg{ height: 20px;}
+    .offcanvas.offcanvas-start.mobileSubMenu{ width: 100%; background-color: #f7f8fa;}
+    .mobileSubMenu .offcanvas-header{ background-color: #fff;}
+    .mobileSubMenu .offcanvas-header .backBtn{ border: 0; background-color: transparent; height: 24px; width: 24px; padding: 0;}
+    .mobileSubMenu .subnavigationLinks{ display: flex; flex-direction: column; gap: 10px;}
+    .mobileSubMenu .subnavigationLinks .sub_nav_link{ border-radius: 8px; overflow: hidden;}
 }
 @media(width <= 767.98px) {
     body{     background-size: 300px;  background-position: right bottom;}
@@ -234,4 +265,5 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
     .knowUsBetterBox .knowUsBetterImg{ height: auto;}
     .popularProductsSliderBox{ padding: 30px 0;}
     .overviewContainer .one, .overviewContainer .two{ width: 100%;}
+    .formDesign .inputBox{ width: 100%;}
 }
