@@ -19,104 +19,343 @@
 <body class="<?php echo $isRTL == "rtl" ? 'rtl' : 'ltr'; ?>">
     
 
-    <div class="topAdvertise">
-        <div class="container">
-            <a href="#" class="topAdvertiseText">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-[20px] w-[20px] shrink-0 stroke-brand"><path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"></path></svg>
-                <p>soundcore x Żywiec Męskie Granie | Enjoy the ultimate music journey and Win Big!</p>
-            </a>
-        </div>
-    </div>
-    <nav class="navigation">
-        <div class="container">
-            <div class="navigationSection">
-                <div class="mainLogo">
-                    <a href="#"><img src="images/logo.webp" alt="logo"></a>
-                </div>
-                <div class="navigationMenu">
-                    <div class="navigationLink">
-                        <a href="#" class="nav_link"> New Releases </a>
-                        <div class="subnavigation"> 
-                            <div class="container">
-                                <div class="subnavigationLinks">
-                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
-                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
-                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+    <div class="navigationContainer">
+        <nav class="navigation">
+            <div class="container">
+                <div class="navigationSection">
+                    <div class="mainLogo">
+                        <a href="#"><img src="images/logo.webp" alt="logo"></a>
+                    </div>
+                    <div class="navigationMenu">
+                        <div class="navigationLink">
+                            <a href="#" class="nav_link"> New Releases </a>
+                            <div class="subnavigation"> 
+                                <div class="container">
+                                    <div class="subnavigationLinks">
+                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
+                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
+                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigationLink">
+                            <a href="#" class="nav_link"> Back to School </a>
+                            <div class="subnavigation"> 
+                                <div class="container">
+                                    <div class="subnavigationLinks">
+                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
+                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
+                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigationLink">
+                            <a href="#" class="nav_link"> Headphones </a>
+                            <div class="subnavigation"> 
+                                <div class="container">
+                                    <div class="headphoneFlex">
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>Space One Pro</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>Space One Pro</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>Space One Pro</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>Space One Pro</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>Space One Pro</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>Space One Pro</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigationLink">
+                            <a href="#" class="nav_link"> Explore </a>
+                            <div class="subnavigation"> 
+                                <div class="container">
+                                    <div class="exploreFlex">
+                                        <div class="exploreLink">
+                                            <p>Brand</p>
+                                            <a href="">Our Story</a>
+                                            <a href="">Tech</a>
+                                            <a href="">Sustainability</a>
+                                            <a href="">Certified Refurbished Products</a>
+                                            <a href="">soundcoreCredits</a>
+                                            <a href="">Member Monthly Events</a>
+                                        </div>
+                                        <div class="exploreLink">
+                                            <p>Brand</p>
+                                            <a href="">Our Story</a>
+                                            <a href="">Tech</a>
+                                            <a href="">Sustainability</a>
+                                            <a href="">Certified Refurbished Products</a>
+                                            <a href="">soundcoreCredits</a>
+                                            <a href="">Member Monthly Events</a>
+                                        </div>
+                                        <div class="exploreLink">
+                                            <p>Brand</p>
+                                            <a href="">Our Story</a>
+                                            <a href="">Tech</a>
+                                            <a href="">Sustainability</a>
+                                            <a href="">Certified Refurbished Products</a>
+                                            <a href="">soundcoreCredits</a>
+                                            <a href="">Member Monthly Events</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="navigationLink">
-                        <a href="#" class="nav_link"> Back to School </a>
-                        <div class="subnavigation"> 
-                            <div class="container">
-                                <div class="subnavigationLinks">
-                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
-                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
-                                    <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="languageChange">
+                        <select name="language" id="language">
+                            <option value="en">English</option>
+                            <option value="ae">UAE</option>
+                        </select>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <nav class="mobileNavigationSection">
-        <div class="container">
-            <div class="mobileNavigation">
-                <div class="mainLogo">
-                    <a href="#"><img src="images/logo.webp" alt="logo"></a>
-                </div>
-                <button class="mobileToggleMenu mobileToggle" >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-[30px] w-[30px] "><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
-                </button>
-                <div class="mobileNavigationMenu">
-                    <div class="mobileNavigationMenuTop">
+        </nav>
+        <nav class="mobileNavigationSection">
+            <div class="container">
+                <div class="mobileNavigation">
+                    <div class="mainLogo">
+                        <a href="#"><img src="images/logo.webp" alt="logo"></a>
+                    </div>
+                    <div class="mobileRight">
+                        <div class="languageChange">
+                            <select name="language" id="language">
+                                <option value="en">English</option>
+                                <option value="ae">UAE</option>
+                            </select>
+                        </div>                    
+                        <button class="mobileToggleMenu mobileToggle" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-[30px] w-[30px] "><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                        </button>
+                    </div>
+                    <div class="mobileNavigationMenu">
+                        <div class="mobileNavigationMenuTop">
+                            <div class="container">
+                                <div class="mobileTop">
+                                    <div class="mainLogo">
+                                        <a href="#"><img src="images/logo.webp" alt="logo"></a>
+                                    </div>
+                                    <button class="mobileToggleMenu mobileToggle" >
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-[30px] w-[30px] "><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="container">
-                            <div class="mobileTop">
-                                <div class="mainLogo">
-                                    <a href="#"><img src="images/logo.webp" alt="logo"></a>
-                                </div>
-                                <button class="mobileToggleMenu mobileToggle" >
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-[30px] w-[30px] "><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>
-                                </button>
+                            <div class="mobileNavigationLink">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">New Releases <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                                <button>Back to School <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                                <button data-bs-toggle="offcanvas" data-bs-target="#headphones" aria-controls="headphones">Headphones <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                                <button data-bs-toggle="offcanvas" data-bs-target="#explore" aria-controls="explore">Explore <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="mobileNavigationLink">
-                            <button data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">New Releases <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
-                            <button>Back to School <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                </div>
+            </div>
+        </nav>
+        <!-- newReleaseOffCanvase -->
+            <div class="offcanvas offcanvas-start mobileSubMenu" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="backBtn" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg>
+                    </button>
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">New Releases</h5>
+                    <button type="button" class="backBtn canvas_back_btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>            
+                    </button>
+                    
+                </div>
+                <div class="offcanvas-body">
+                        <div class="subnavigationLinks">
+                                <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
+                                <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
+                                <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- newReleaseOffCanvase -->
+        <!-- Headphone -->
+            <div class="offcanvas offcanvas-start mobileSubMenu" data-bs-backdrop="static" tabindex="-1" id="headphones" aria-labelledby="headphonesLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="backBtn" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg>
+                    </button>
+                    <h5 class="offcanvas-title" id="headphonesLabel">New Releases</h5>
+                    <button type="button" class="backBtn canvas_back_btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>            
+                    </button>
+                    
+                </div>
+                <div class="offcanvas-body">
+                    <div class="headphoneFlex">
+                        <div class="headphonesSubNav">
+                            <a href="#">
+                                <div class="headphonesLink">
+                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                    <p>Space One Pro</p>
+                                    <p>€199.99</p>
+                                    <span>New</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="headphonesSubNav">
+                            <a href="#">
+                                <div class="headphonesLink">
+                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                    <p>Space One Pro</p>
+                                    <p>€199.99</p>
+                                    <span>New</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="headphonesSubNav">
+                            <a href="#">
+                                <div class="headphonesLink">
+                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                    <p>Space One Pro</p>
+                                    <p>€199.99</p>
+                                    <span>New</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="headphonesSubNav">
+                            <a href="#">
+                                <div class="headphonesLink">
+                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                    <p>Space One Pro</p>
+                                    <p>€199.99</p>
+                                    <span>New</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="headphonesSubNav">
+                            <a href="#">
+                                <div class="headphonesLink">
+                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                    <p>Space One Pro</p>
+                                    <p>€199.99</p>
+                                    <span>New</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="headphonesSubNav">
+                            <a href="#">
+                                <div class="headphonesLink">
+                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                    <p>Space One Pro</p>
+                                    <p>€199.99</p>
+                                    <span>New</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <!-- newReleaseOffCanvase -->
-     <div class="offcanvas offcanvas-start mobileSubMenu" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="backBtn" data-bs-dismiss="offcanvas" aria-label="Close">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg>
-            </button>
-            <h5 class="offcanvas-title" id="staticBackdropLabel">New Releases</h5>
-            <button type="button" class="backBtn canvas_back_btn" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>            
-            </button>
-            
-        </div>
-        <div class="offcanvas-body">
-                <div class="subnavigationLinks">
-                        <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
-                        <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
-                        <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
+        <!-- Headphone -->
+        <!-- explore -->
+            <div class="offcanvas offcanvas-start mobileSubMenu" data-bs-backdrop="static" tabindex="-1" id="explore" aria-labelledby="exploreLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="backBtn" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg>
+                    </button>
+                    <h5 class="offcanvas-title" id="exploreLabel">New Releases</h5>
+                    <button type="button" class="backBtn canvas_back_btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>            
+                    </button>
+                    
                 </div>
+                <div class="offcanvas-body">
+                    <div class="exploreFlex">
+                        <div class="exploreLink">
+                            <p>Brand</p>
+                            <a href="">Our Story</a>
+                            <a href="">Tech</a>
+                            <a href="">Sustainability</a>
+                            <a href="">Certified Refurbished Products</a>
+                            <a href="">soundcoreCredits</a>
+                            <a href="">Member Monthly Events</a>
+                        </div>
+                        <div class="exploreLink">
+                            <p>Brand</p>
+                            <a href="">Our Story</a>
+                            <a href="">Tech</a>
+                            <a href="">Sustainability</a>
+                            <a href="">Certified Refurbished Products</a>
+                            <a href="">soundcoreCredits</a>
+                            <a href="">Member Monthly Events</a>
+                        </div>
+                        <div class="exploreLink">
+                            <p>Brand</p>
+                            <a href="">Our Story</a>
+                            <a href="">Tech</a>
+                            <a href="">Sustainability</a>
+                            <a href="">Certified Refurbished Products</a>
+                            <a href="">soundcoreCredits</a>
+                            <a href="">Member Monthly Events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- newReleaseOffCanvase -->
-    <div class="mainBannerSection">
-        <div class="container">
+        <!-- explore -->
+        <div class="mainBannerSection">
             <div class="mainSlider slider_arrow">
                 <div>
                     <div class="perfectSoundProductBox bigbanner">
@@ -164,55 +403,14 @@
             </div>
         </div>
     </div>
-    <div class="perfectSoundSection padT100">
+    
+    <div class="padT100">
         <div class="container">
-            <div class="mainTitle">
-                <h2>Discover the Perfect Sound</h2>
-                <p>Find something that hits the right note</p>
-            </div>
-            <div class="perfectSoundProduct">
-                <div class="perfectSoundProductBox bigbanner">
-                    <div class="perfectSoundProductImg">
-                        <img src="images/liberty.webp" alt="">
-                        <img src="images/liberty-1.webp" alt="">
-                    </div>
-                    <div class="perfectSoundProductText">
-                        <p><b>Liberty 5</b></p>
-                        <h2>Quiet the Crowd, Enjoy the Journey</h2>
-                        <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
-                        <a href="#" class="button"><span>Buy Now</span></a>
-                    </div>
-                </div>
-                <div class="perfectSoundProductBox smallbox">
-                    <div class="perfectSoundProductText">
-                        <p><b>Space One Pro</b></p>
-                        <h3>Super Foldable Headphones</h3>
-                        <a href="#" class="textBtn">Buy Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-[16px] md:hidden"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></a>
-                    </div>
-                    <div class="perfectSoundProductImg">
-                        <img src="images/spaceOnePro.webp" alt="">
-                    </div>
-                </div>
-                <div class="perfectSoundProductBox">
-                    <div class="perfectSoundProductText">
-                        <p><b>Sport X20</b></p>
-                        <h3>Elevate Your Fitness Journey</h3>
-                        <a href="#" class="textBtn">Buy Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-[16px] md:hidden"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></a>
-                    </div>
-                    <div class="perfectSoundProductImg">
-                        <img src="images/sportX20.webp" alt="">
-                    </div>
-                </div>
-                <div class="perfectSoundProductBox">
-                    <div class="perfectSoundProductText">
-                        <p><b>Space Q45</b></p>
-                        <h3>50 Hours of Personal Space</h3>
-                        <a href="#" class="textBtn">Buy Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-[16px] md:hidden"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></a>
-                    </div>
-                    <div class="perfectSoundProductImg">
-                        <img src="images/spaceQ45.webp" alt="">
-                    </div>
-                </div>
+            <div class="headphoneBrand">
+                <a href="#">
+                    <img src="images/headphoneBrand.webp" alt="headphoneBrand">
+                    <img src="images/headphoneBrand-1.webp" alt="headphoneBrand">
+                </a>
             </div>
         </div>
     </div>
@@ -300,50 +498,7 @@
             </div>
         </div>
     </div>
-    <div class="padT100">
-        <div class="container">
-            <div class="headphoneBrand">
-                <a href="#">
-                    <img src="images/headphoneBrand.webp" alt="headphoneBrand">
-                    <img src="images/headphoneBrand-1.webp" alt="headphoneBrand">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="padT100">
-        <div class="container">
-            <div class="mainTitle">
-                <h2>Get to Know Us Better</h2>
-                <p>Take a deep dive into what makes us soundcore</p>
-            </div>
-            <div class="knowUsBetter">
-                <div class="knowUsBetterBox">
-                    <div class="knowUsBetterImg">
-                        <img src="images/soundcore-story.webp" alt="soundcore-story">
-                        <a href="">
-                            <div class="knowUsBetterText">
-                                <h4>soundcore's Story</h4>
-                                <p>Learn about who we are and what we stand for.</p>
-                                <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="knowUsBetterBox">
-                    <div class="knowUsBetterImg">
-                        <img src="images/soundcore-tech.webp" alt="soundcore-tech">
-                        <a href="">
-                        <div class="knowUsBetterText">
-                                <h4>soundcore's Tech</h4>
-                                <p>Go behind the scenes and learn about our innovative technology.</p>
-                                <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="World_leading_Section">
         <div class="container">
             <div class="World_leading_Container">
@@ -449,6 +604,50 @@
             </div>
         </div>
     </div>
+
+    <footer class="footerSection">
+        <div class="container">
+            <div class="footer_container">
+                <div class="footer_Links">
+                    <p>Brand</p>
+                    <a href="#">soundcore's Story</a>
+                    <a href="#">Where to Buy</a>
+                </div>
+                <div class="footer_Links">
+                    <p>Headphones</p>
+                    <a href="#">Over Ear Headphones</a>
+                    <a href="#">Space One Pro</a>
+                    <a href="#">Q30</a>
+                    <a href="#">Space Q45</a>
+                </div>
+                <div class="footer_Links">
+                    <p>Earbuds</p>
+                    <a href="#">TWS Earbuds</a>
+                    <a href="#">ANC Earbuds</a>
+                    <a href="#">Sleep A20</a>
+                    <a href="#">Liberty 4 NC</a>
+                    <a href="#">Sport X20</a>
+                </div>
+                <div class="footer_Links">
+                    <p>Others</p>
+                    <a href="#">Become an Affiliate</a>
+                    <a href="#">Education Discount</a>
+                    <a href="#">soundcoreCredits</a>
+                    <a href="#" class="playstore"><img src="images/icon_googleplay.svg" alt=""></a>
+                    <a href="#" class="playstore"><img src="images/icon_appstore.svg" alt=""></a>
+                </div>
+                <div class="footer_Links">
+                    <p>Social</p>
+                    <div class="socialMedia">
+                        <a href="#"><img src="images/icon_facebook.svg" alt=""></a>
+                        <a href="#"><img src="images/icon_instagram.svg" alt=""></a>
+                        <a href="#"><img src="images/icon_linkedin.svg" alt=""></a>
+                        <a href="#"><img src="images/icon_twitter.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

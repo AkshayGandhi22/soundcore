@@ -23,13 +23,29 @@ img{ max-width: 100%;}
 .subnavigation{ display: none;}
 .navigationSection { display: flex; flex-wrap: wrap; align-items: center;}
 .navigationSection .mainLogo img{ max-width: 200px;}
-.navigationSection .navigationMenu{ margin-left: 64px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center;}
+.navigationSection .navigationMenu{ margin-left: 64px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center; flex: 1;}
 .navigationSection .navigationMenu a{ color: #000; font-size: 14px; font-weight: 700; padding: 30px 0;}
 .navigationSection .navigationMenu .navigationLink:hover .nav_link  + .subnavigation{ display: block; position: absolute; top: 100%; width: 100%; z-index: 1; left: 0; background-color: #fff; border-top: 1px solid #bdbdbd; border-radius: 0 0 16px 16px;}
 .subnavigation .subnavigationLinks{ display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding-top: 50px; padding-bottom: 30px; }
 .subnavigation .subnavigationLinks .sub_nav_link{ width: calc(33.33% - 13.33px); border-radius: 16px; overflow: hidden; padding: 0;}
 body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position: absolute; top: 0; width: 100%; height: 100%; background-color: #00000087;}
 .mobileNavigationSection{ display: none;}
+.languageChange select{ padding: 5px 10px; padding-right: 30px; border-radius: 16px; border: 1px solid #000; appearance: none; font-size: 14px; background: url("../images/downArrow.svg") no-repeat right 8px center; background-size: 12px;}
+
+
+.exploreFlex{ padding: 20px 0; display: flex; gap: 15px; flex-wrap: wrap;}
+.exploreFlex .exploreLink{ width: calc(33.33% - 10px); display: flex; flex-direction: column; gap: 10px;}
+.exploreFlex .exploreLink p{ font-size: 14px; color: #000; font-weight: 700;}
+.exploreFlex .exploreLink a{ font-size: 14px; color: #333; padding: 0; display: inline-block; font-weight: 400;}
+.exploreFlex .exploreLink a:hover{ color: #17bbef;}
+
+.headphoneFlex{ display: flex; gap: 15px; flex-wrap: wrap; padding:  20px 0;}
+.headphonesSubNav { width: calc(16.66% - 12.5px); background-color: #f5f5f7; border-radius: 8px; padding: 16px;}
+.headphonesSubNav .headphonesLink{ display: flex; flex-direction: column; gap: 5px;}
+.headphonesSubNav .headphonesLink a{ display: inline-block; padding: 0;}
+.headphonesSubNav .headphonesLink img {  max-height: 136px;  height: 100%;  object-fit: contain; }
+.headphonesSubNav .headphonesLink p{ font-size: 14px;}
+.headphonesSubNav .headphonesLink span{ font-size: 14px; color: #17bbef; }
  
 .topAdvertise{ padding: 10px 0; background-color: #fff; position: relative; z-index: 2;}
 .topAdvertise .topAdvertiseText{ display: flex; justify-content: center; gap: 5px; align-items: center; align-items: center; color: #17bbef;}
@@ -64,7 +80,8 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .popularProductsSlider.slider_arrow .slick-next, .popularProductsSlider.slider_arrow .slick-prev{ opacity: 0.5;}
 .popularProductsSlider.slider_arrow .slick-next:hover, .popularProductsSlider.slider_arrow .slick-prev:hover{ opacity: 1;}
 
-
+.navigationContainer{ position: sticky; top: 0; background-color: #fff; z-index: 2;}
+.mainBannerSection { margin: 0 80px;}
 .mainSlider .slick-dots{ bottom: 0;}
 .mainSlider .slick-dots li{margin: 0; padding: 0;}
 .mainSlider .slick-dots li button{margin: 0; padding: 0; width: 8px; height: 8px; border-radius: 8px; background-color: #bdbdbd; }
@@ -76,14 +93,15 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .mainSlider.slider_arrow:hover .slick-next, .mainSlider.slider_arrow:hover .slick-prev{ opacity: 0.5;}
 .mainSlider.slider_arrow .slick-next:hover, .mainSlider.slider_arrow .slick-prev:hover{ opacity: 0.8;}
 .mainSlider.slider_arrow:hover .perfectSoundProductBox.bigbanner img{ scale: 1.2;}
-.mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img{transition: all 0.5s linear;}
+.mainSlider.slider_arrow .perfectSoundProductBox.bigbanner .perfectSoundProductImg{ height: 100%;}
+.mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img{transition: all 0.5s linear; height: 100%; object-fit: cover;}
 .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img:nth-child(2){ display: none;}
+.mainSlider.slider_arrow .perfectSoundProductBox.bigbanner{ height:39.375vw ;}
 
 
 .productSlider.slider_arrow .slick-prev{ left: 20px; z-index: 1; opacity: 0; background-color: #000000be; border-color: #000000be;}
 .productSlider.slider_arrow .slick-next{ right: 20px; z-index: 1; opacity: 0; background-color: #000000be; border-color: #000000be;}
 .productSlider.slider_arrow:hover .slick-prev , .productSlider.slider_arrow:hover .slick-next{ opacity: 1; }
-
 
 .perfectSoundProductBox.bigbanner.whiteColor .perfectSoundProductText{ color: #fff;}
 .knowUsBetter{ max-width: 864px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px;} 
@@ -182,10 +200,22 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .payment_method_icon{ display: flex; flex-wrap: wrap }
 .payment_method p{ margin-bottom: 5px;}
 
+.footerSection{ background-color: #000; padding: 100px 0; background-color: #000; margin-top: 100px; color: #fff;}
+.footerSection a{ color: #999; font-size: 14px;}
+.footerSection .footer_container{ display: flex; flex-wrap: wrap; gap: 20px;}
+.footerSection .footer_container .footer_Links{ display: flex; flex-direction: column; gap: 20px; width: calc(25% - 15px);}
+.footerSection .footer_container .footer_Links p{ margin-bottom: 10px;}
+.footerSection .footer_container .footer_Links a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fit-content;}
+.footerSection .footer_container .footer_Links .socialMedia a{ height: 40px; min-width: 40px; width: 40px; border-radius: 40px; display: flex; background-color: #fff;}
+.footerSection .footer_container .footer_Links a:hover{ color: #17bbef;}
+.footerSection .footer_container .footer_Links .socialMedia { display: flex; gap: 10px; flex-wrap: wrap;}
+  
 @media(width <= 991.98px) {
     .mainTitle h2{ font-size: 28px;}
     .mainTitle p{ font-size: 16px;}
     .mainBannerSection .container{ padding: 0; margin: 0; max-width: 100%;}
+    .mainBannerSection{ margin: 0;}
+    .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner{ height: 100%; }
     .perfectSoundProductBox.bigbanner .perfectSoundProductText{ margin-left: 50px;}
     .mainSlider .perfectSoundProductBox{ border-radius: 0;}
     .perfectSoundProduct .perfectSoundProductText h2{ font-size: 24px;}
@@ -209,7 +239,7 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
     .mobileNavigation{ display: flex; align-items: center; justify-content: space-between;}
     .mobileNavigation .mainLogo{ max-width: 140px;}
     .mobileNavigation .mobileToggleMenu{height: 30px; width: 30px; border: 1px solid #17bbef; color: #17bbef; border-radius: 30px; padding: 5px; display: flex; align-items: center; justify-content: center; background-color: transparent;}
-    .mobileNavigationMenu{ display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: #f7f8fa; z-index: 4;}
+    .mobileNavigationMenu{ display: none; position: absolute; top: 0; left: 0; height: 100vh; width: 100%; background-color: #f7f8fa; z-index: 4;}
     .mobileNavigationMenu.show{ display: block}
     body:has(.mobileNavigationMenu.show){ overflow: hidden;}
     .mobileNavigationMenu .mobileNavigationMenuTop {background-color: #fff; padding: 10px 0;}
@@ -222,6 +252,12 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
     .mobileSubMenu .offcanvas-header .backBtn{ border: 0; background-color: transparent; height: 24px; width: 24px; padding: 0;}
     .mobileSubMenu .subnavigationLinks{ display: flex; flex-direction: column; gap: 10px;}
     .mobileSubMenu .subnavigationLinks .sub_nav_link{ border-radius: 8px; overflow: hidden;}
+    .mobileRight{ display: flex; align-items: center; gap: 10px;}
+
+    .headphonesSubNav{ width: calc(33.33% - 10px);}
+    .headphonesSubNav p{ color: #000;}
+    .exploreFlex .exploreLink{ width: 100%;}
+    
 }
 @media(width <= 767.98px) {
     body{     background-size: 300px;  background-position: right bottom;}
@@ -259,6 +295,7 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
     .quiettheCrowd img:nth-child(2){ display: block;}
     .quiettheCrowd img:first-child{ display: none;}
     .specsTable tr{ width: 100%;}
+    .headphonesSubNav{ width: calc(50% - 7.5px);}
 } 
 @media(width <= 567.98px) {
     .knowUsBetterBox{ width: 100%;}
