@@ -4,3 +4,4 @@
 .perfectSoundProductBox.bigbanner .perfectSoundProductText .button{ margin-left: auto;}
 .popularProductsBox .popularProductsText .priceSection, .knowUsBetterBox .knowUsBetterImg .knowUsBetterText .textBtn, .productContent .pricingText h3, .color_radio .color_radio_input, .specsTable tr td{ justify-content: flex-end;}
 .product_Liberty_Container .productContent , .overviewContainer .overviewBox .overviewText, .productSpec .productSpecBox .productSpecText, .specsTable tr td, .formDesign .inputBox{ text-align: right;}
+.buyNowSection p, .payment_method_icon{     justify-content: flex-end;}

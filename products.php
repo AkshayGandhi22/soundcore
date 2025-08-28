@@ -393,6 +393,9 @@
                             <label for="apricot"><img src="images/apricot.webp" alt=""> <input type="radio" name="color" id="apricot"></label>
                         </div>
                     </div>
+                    <div class="buyNowSection">
+                        <p>Buy Now To:- <a href=""><img src="images/amazon_icon.png" alt=""></a> <a href=""><img src="images/flipkart-icon.png" alt=""></a></p>
+                    </div>
                     <div class="services_benefits">
                         <h5>Services and benefits</h5>
                         <div class="services_benefits_Box">
