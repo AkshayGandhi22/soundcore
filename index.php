@@ -158,10 +158,16 @@
                         </div>
                     </div>
                     <div class="languageChange">
-                        <select name="language" id="language">
-                            <option value="en">English</option>
-                            <option value="ae">UAE</option>
-                        </select>
+                        <div class="custom-dropdown">
+                            <button class="dropdown-toggle">
+                                🌐︎ English UK
+
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>English UK </li>
+                                <li>Arabic</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,12 +179,18 @@
                         <a href="#"><img src="images/logo.webp" alt="logo"></a>
                     </div>
                     <div class="mobileRight">
-                        <div class="languageChange">
-                            <select name="language" id="language">
-                                <option value="en">English</option>
-                                <option value="ae">UAE</option>
-                            </select>
-                        </div>                    
+                        <div class="custom-dropdown">
+                            <button class="dropdown-toggle">
+                                🌐 English <span class="arrow">▼</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>Spanish</li>
+                                <li>Italian</li>
+                                <li>Japanese</li>
+                                <li>German</li>
+                            </ul>
+                        </div>
+            
                         <button class="mobileToggleMenu mobileToggle" >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-[30px] w-[30px] "><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
                         </button>
@@ -228,7 +240,6 @@
                         </div>
                 </div>
             </div>
-        </div>
         <!-- newReleaseOffCanvase -->
         <!-- Headphone -->
             <div class="offcanvas offcanvas-start mobileSubMenu" data-bs-backdrop="static" tabindex="-1" id="headphones" aria-labelledby="headphonesLabel">
@@ -307,7 +318,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         <!-- Headphone -->
         <!-- explore -->
             <div class="offcanvas offcanvas-start mobileSubMenu" data-bs-backdrop="static" tabindex="-1" id="explore" aria-labelledby="exploreLabel">
@@ -353,55 +363,7 @@
                     </div>
                 </div>
             </div>
-        </div>
         <!-- explore -->
-        <div class="mainBannerSection">
-            <div class="mainSlider slider_arrow">
-                <div>
-                    <div class="perfectSoundProductBox bigbanner">
-                        <div class="perfectSoundProductImg">
-                            <img src="images/banner1.webp" alt="">
-                            <img src="images/banner1-1.webp" alt="">
-                        </div>
-                        <div class="perfectSoundProductText">
-                            <p><b>Liberty 5</b></p>
-                            <h2>Quiet the Crowd, Enjoy the Journey</h2>
-                            <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
-                            <a href="#" class="button"><span>Buy Now</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="perfectSoundProductBox bigbanner whiteColor">
-                        <div class="perfectSoundProductImg">
-                            <img src="images/banner2.webp" alt="">
-                            <img src="images/banner2-2.jpg" alt="">
-                        </div>
-                        <div class="perfectSoundProductText">
-                            <p><b>Liberty 5</b></p>
-                            <h2>Quiet the Crowd, Enjoy the Journey</h2>
-                            <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
-                            <a href="#" class="button"><span>Buy Now</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="perfectSoundProductBox bigbanner">
-                        <div class="perfectSoundProductImg">
-                            <img src="images/banner1.webp" alt="">
-                            <img src="images/banner1-1.webp" alt="">
-                        </div>
-                        <div class="perfectSoundProductText">
-                            <p><b>Liberty 5</b></p>
-                            <h2>Quiet the Crowd, Enjoy the Journey</h2>
-                            <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
-                            <a href="#" class="button"><span>Buy Now</span></a>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
     </div>
     
     <div class="padT100">

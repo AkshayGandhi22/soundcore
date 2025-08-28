@@ -1,4 +1,4 @@
-body{ color: #000; font-family: MontForAnker; background: url(../images/bgImage.webp)no-repeat; background-attachment: fixed; background-size: contain; background-position: top right 15%;}
+body{ color: #000; overflow-x: hidden; font-family: MontForAnker; background: url(../images/bgImage.webp)no-repeat; background-attachment: fixed; background-size: contain; background-position: top right 15%;}
 
 h2{ font-size: 38px; line-height: 1.2; font-weight: 800; margin: 0;}
 h3{ font-size: 32px; line-height: 1.2; font-weight: 800; margin: 0;}
@@ -168,9 +168,10 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .specsTable tr td:first-child{ color: #999;}
 
 .product_Liberty_Section{ overflow: hidden;}
-.product_Liberty_Container{ display: flex; flex-wrap: wrap; gap: 90px;}
-.product_Liberty_Container .productSlider, .product_Liberty_Container .productContent{ width: calc(50% - 45px);} 
-.product_Liberty_Container .productSlider{ position: sticky; top: 0; height: fit-content;}
+.product_Liberty_Container{ display: flex; flex-wrap: wrap; gap: 90px; position: relative;}
+.product_Liberty_Container .productSliderSection, .product_Liberty_Container .productContent{ width: calc(50% - 45px);} 
+.product_Liberty_Container .productSliderSection{ position: sticky; top: 0; }
+.product_Liberty_Container .productSliderSection .slider-count{ position: absolute; top: 10px; right: 10px; background-color: #1f202133; padding: 2px 5px; border-radius: 2px; color: #fff; font-size: 14px;}
 .product_Liberty_Container .productContent{ display: flex; flex-direction: column; gap: 16px;}
 .productContent .pricingText h3 span{ font-size: 14px; color: #ffa800; padding: 5px; border: 1px solid #ffa800; }
 .productContent .pricingText h3 { display: flex; align-items: center; gap: 10px;}
@@ -184,6 +185,19 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .services_benefits .services_benefits_Box{ background-color: #f7f8fa; padding: 16px; border-radius: 8px; display: flex; flex-wrap: wrap; gap: 20px; margin-top: 10px;}
 .services_benefits .services_benefits_Box .services_benefits_text{ display: flex; gap: 10px; width: calc(50% - 10px);}
 .services_benefits .services_benefits_Box .services_benefits_text img{ height: 20px;}
+
+.productbg{ background: #fff;}
+
+.productContentView.show ul::after { content: ''; position: absolute; height: 100%; width: 100%; z-index: 1; inset: 0; background: linear-gradient(0deg, #fff 10%, #ffffff00 100%)}
+.productContentView.show ul{ height: 50px; overflow: hidden; position: relative;}
+.productContentView ul { margin: 0; padding: 0; list-style: none;  }
+.productContentView ul li{ padding-left: 20px; position: relative ; color: #333;}
+.productContentView ul li::before{ content: ''; position: absolute; top: 8px; left:0 ; height: 7px; width: 7px; background-color: #333;}
+.productContentView .productViewMore{ display: flex; background-color: transparent; border: none; gap: 5px; align-items: center; margin-left: auto;}
+.productContentView .productViewMore img{ height: 15px;}
+.productContentView.show .productViewMore span:first-child{ display: none;}
+.productContentView.show .productViewMore span:nth-child(2){ display: block;}
+.productContentView .productViewMore span:nth-child(2){ display: none;}
 
 .want_perks_accodion{ padding-bottom: 10px; border-bottom: 1px solid #aaaaaa;}
 .want_perks_accodion .accordion-button{ padding: 0; background-color: transparent !important; color: #000 !important; font-size: 16px;}
@@ -211,13 +225,29 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .footerSection .footer_container .footer_Links .socialMedia { display: flex; gap: 10px; flex-wrap: wrap;}
 
 .buyNowSection p{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap;} 
-.buyNowSection p a{ height: 40px; border-radius: 40px; padding: 10px; background-color: #fff;}
+.buyNowSection p a{ height: 50px; height: 50px;  padding: 10px; background-color: #ebebeb; border-radius: 10px; }
 .buyNowSection p a img{ width: 100%; height: 100%; object-fit: contain;}
 
 .fromBanner{ padding: 100px; background-color: #000; color: #fff; text-align: center;}
- 
-@media(width <= 991.98px) {
-    .mainTitle h2{ font-size: 28px;}
+
+.custom-dropdown { position: relative;display: inline-block;}
+.custom-dropdown .dropdown-toggle {background: #fff;border: none;border-radius: 8px;cursor: pointer;font-size: 14px;display: flex;align-items: center;gap: 6px;}
+.custom-dropdown .dropdown-toggle .arrow {font-size: 12px;}
+.custom-dropdown .dropdown-menu {position: absolute;top: 110%;left: 0;background: #fff;border-radius: 10px;list-style: none;padding: 8px ;margin: 0;display: none;min-width: 140px;z-index: 100;}
+.custom-dropdown .dropdown-menu li {padding: 10px 15px;cursor: pointer;transition: background 0.3s; border-radius: 5px;}
+.custom-dropdown .dropdown-menu li:hover {background: #f0f0f0;}
+.breadCrumb{ display: flex; flex-wrap: wrap; gap: 5px 10px; font-size: 12px;}
+.breadCrumb a{ color: #17bbef; font-weight: 700; margin-bottom: 15px;}
+
+.productSliderBottom{ display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px;}
+.productSliderBottom button{ padding: 0; background-color: transparent; border: none; font-size: 14px; font-weight: 700;}
+.productSliderBottom .banner-radio{ display: flex; gap: 10px; max-width: 210px; background-color: #ececec; border-radius: 40px; padding: 5px;}
+.productSliderBottom .banner-radio input{ display: none;}
+.productSliderBottom .banner-radio label{ padding: 5px 10px; font-size: 14px; font-weight: 700; border-radius: 40px; color: #333;}
+.productSliderBottom .banner-radio label:has(input:checked){ background-color: #333; color: #fff;}
+   
+@media(width <= 991.98px) {  
+    .mainTitle h2{ font-size: 28px;}   
     .mainTitle p{ font-size: 16px;}
     .mainBannerSection .container{ padding: 0; margin: 0; max-width: 100%;}
     .mainBannerSection{ margin: 0;}
@@ -233,31 +263,36 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
      .perfectSoundSection .perfectSoundProductBox.smallbox .perfectSoundProductText{ text-align: left;}
      .perfectSoundSection .perfectSoundProductBox.smallbox .perfectSoundProductText .textBtn{ margin: 0;}
      .perfectSoundSection .perfectSoundProductBox.smallbox { padding: 20px 30px; }
-     .product_Liberty_Container .productSlider, .product_Liberty_Container .productContent {  width:100%; }
-     .product_Liberty_Container .productSlider{ position: relative;}
+     .product_Liberty_Container .productSliderSection, .product_Liberty_Container .productContent {  width:100%; }
+     .product_Liberty_Container .productSliderSection{ position: relative;}
      .product_Liberty_Container{ gap: 30px;}
      .overviewContainer .overviewBox .overviewText h4{ font-size: 20px;}
      .productSpec .productSpecBox .productSpecText, .productSpec .productSpecBox .productSpecImg{ width: 100%;}
      .productSpec .productSpecBox{ gap: 30px;}
      
     .navigation{ display: none;}
-    .mobileNavigationSection{ display: block; padding: 20px 0;}
+    .mobileNavigationSection{ display: block; padding: 20px 0; overflow: hidden;}
     .mobileNavigation{ display: flex; align-items: center; justify-content: space-between;}
     .mobileNavigation .mainLogo{ max-width: 140px;}
     .mobileNavigation .mobileToggleMenu{height: 30px; width: 30px; border: 1px solid #17bbef; color: #17bbef; border-radius: 30px; padding: 5px; display: flex; align-items: center; justify-content: center; background-color: transparent;}
-    .mobileNavigationMenu{ display: none; position: absolute; top: 0; left: 0; height: 100vh; width: 100%; background-color: #f7f8fa; z-index: 4;}
-    .mobileNavigationMenu.show{ display: block}
+    .mobileNavigationMenu{transform: translateX(-100%); transition:all 0.2s linear ; position: absolute; top: 0; left: 0; height: 100vh; width: 100%; background-color: #f7f8fa; z-index: 4;}
+    .mobileNavigationMenu.show{ transform: translateX(0%);}
     body:has(.mobileNavigationMenu.show){ overflow: hidden;}
-    .mobileNavigationMenu .mobileNavigationMenuTop {background-color: #fff; padding: 10px 0;}
+    .navigationContainer:has(.mobileNavigationMenu.show){  height: 100vh;}
+    .mobileNavigationMenu .mobileNavigationMenuTop {background-color: #fff; padding: 10px 0; transform: translateY(-100%); transition:all 0.5s linear ;}
+    .mobileNavigationMenu.show .mobileNavigationMenuTop{transform: translateY(0);}
     .mobileNavigationMenu .mobileNavigationMenuTop .mobileTop{  display: flex; align-items: center; justify-content: space-between;}
     .mobileNavigationLink{ display: flex; flex-direction: column; gap: 30px; margin-top: 40px;}
-    .mobileNavigationLink button{ display: flex; justify-content: space-between; border: none; background-color: transparent; padding: 0; font-size: 16px; font-weight: 700;}
+    .mobileNavigationLink button{ display: flex; justify-content: space-between; border: none; background-color: transparent; padding: 0; font-size: 16px; font-weight: 700; transform: translateX(-20px);  transition: all 0.5s linear; opacity: 0; }
+    .mobileNavigationMenu.show .mobileNavigationLink button{transform: none; opacity: 1; }
+ 
     .mobileNavigationLink button svg{ height: 20px;}
     .offcanvas.offcanvas-start.mobileSubMenu{ width: 100%; background-color: #f7f8fa;}
     .mobileSubMenu .offcanvas-header{ background-color: #fff;}
     .mobileSubMenu .offcanvas-header .backBtn{ border: 0; background-color: transparent; height: 24px; width: 24px; padding: 0;}
     .mobileSubMenu .subnavigationLinks{ display: flex; flex-direction: column; gap: 10px;}
-    .mobileSubMenu .subnavigationLinks .sub_nav_link{ border-radius: 8px; overflow: hidden;}
+    .mobileSubMenu .subnavigationLinks .sub_nav_link{ border-radius: 8px; overflow: hidden; transform: translateX(-20px);  transition: all 0.5s linear; opacity: 0;}
+    .mobileSubMenu.show .subnavigationLinks .sub_nav_link{transform: none; opacity: 1; }
     .mobileRight{ display: flex; align-items: center; gap: 10px;}
 
     .headphonesSubNav{ width: calc(33.33% - 10px);}
