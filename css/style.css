@@ -167,10 +167,9 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .specsTable tr td{ width: 50%; padding: 24px; border-top:1px solid #e8e8e8; color: rgb(89, 89, 89); border-right:1px solid #e8e8e8; display: flex; align-items: center; font-weight: 700;}
 .specsTable tr td:first-child{ color: #999;}
 
-.product_Liberty_Section{ overflow: hidden;}
 .product_Liberty_Container{ display: flex; flex-wrap: wrap; gap: 90px; position: relative;}
 .product_Liberty_Container .productSliderSection, .product_Liberty_Container .productContent{ width: calc(50% - 45px);} 
-.product_Liberty_Container .productSliderSection{ position: sticky; top: 0; }
+.product_Liberty_Container .productSliderSection{ position: sticky; top: 0;     align-self: flex-start;}
 .product_Liberty_Container .productSliderSection .slider-count{ position: absolute; top: 10px; right: 10px; background-color: #1f202133; padding: 2px 5px; border-radius: 2px; color: #fff; font-size: 14px;}
 .product_Liberty_Container .productContent{ display: flex; flex-direction: column; gap: 20px;}
 .productContent .pricingText h3 span{ font-size: 14px; color: #ffa800; padding: 5px; border: 1px solid #ffa800; }
@@ -211,24 +210,33 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .formDesign .inputBox input, .formDesign .inputBox select, .formDesign .inputBox textarea{     padding: 12px;  border-radius: 12px;  font-size: 14px;  border: 1px solid #CFD0D1;  line-height: 1.2;  color: #000;}
 .formDesign .inputBox select{    appearance: none; font-size: 14px; background: url("../images/downArrow.svg") no-repeat right 8px center; background-size: 12px;}
 .formDesign .button {width: fit-content;} 
-.payment_method_icon{ display: flex; flex-wrap: wrap }
+.payment_method_icon{ display: flex; flex-wrap: wrap; gap: 10px;}
 .payment_method p{ margin-bottom: 5px;}
 
 .footerSection{ background-color: #000; padding: 100px 0; background-color: #000; margin-top: 100px; color: #fff;}
 .footerSection a{ color: #999; font-size: 14px;}
 .footerSection .footer_container{ display: flex; flex-wrap: wrap; gap: 20px;}
-.footerSection .footer_container .footer_Links{ display: flex; flex-direction: column; gap: 20px; width: calc(25% - 15px);}
-.footerSection .footer_container .footer_Links p{ margin-bottom: 10px;}
-.footerSection .footer_container .footer_Links a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fit-content;}
-.footerSection .footer_container .footer_Links .socialMedia a{ height: 40px; min-width: 40px; width: 40px; border-radius: 40px; display: flex; background-color: #fff;}
+.footerSection .footer_container .footer_Links{ display: flex; flex-direction: column; gap: 20px; width: calc(20% - 16px);}
+.footerSection .footer_container .footer_Links ul{ list-style: none; padding: 0; margin: 0;}
+.footerSection .footer_container .footer_Links ul li {padding: 10px 0;}
+.footerSection .footer_container .footer_Links p{ margin-bottom: 10px; position: relative; z-index: 5;}
+a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fit-content;}
+.socialMedia a{ height: 40px; min-width: 40px; width: 40px; border-radius: 40px; display: flex; background-color: #fff;}
 .footerSection .footer_container .footer_Links a:hover{ color: #17bbef;}
-.footerSection .footer_container .footer_Links .socialMedia { display: flex; gap: 10px; flex-wrap: wrap;}
+ .socialMedia { display: flex; gap: 10px; flex-wrap: wrap;}
+.footerSocialMediaSection{ padding-top: 50px; border-top: 1px solid #333; margin-top: 40px;}
+.clientLogoSection{ display: flex; flex-wrap: wrap; gap: 20px; }
+.clientLogoSection .clientLogo{ width:calc(14.28% - 17.14px); } 
+.clientLogoSection .clientLogo a{ display: inline-block; width: 100%;}
+.clientLogoSection .clientLogo svg{ width: 100%  !important; height: 40px !important; }
+.footerBottomSection{ margin-top: 50px;}
+.footerBottomSection .payment_method_icon{ justify-content: center;}
 
 .buyNowSection p{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap;} 
-.buyNowSection p a{ height: 50px; height: 50px;  padding: 10px; background-color: #ebebeb; border-radius: 10px; }
+.buyNowSection p a{ height: 50px; height: 50px;  padding: 10px; background-color: #ebebeb; border-radius: 10px; display: inline-block;}
 .buyNowSection p a img{ width: 100%; height: 100%; object-fit: contain;}
 
-.fromBanner{ padding: 100px; background-color: #000; color: #fff; text-align: center;}
+.fromBanner{ padding: 100px 0; background-color: #000; color: #fff; text-align: center;}
 
 .custom-dropdown { position: relative;display: inline-block;}
 .custom-dropdown .dropdown-toggle {background: #fff;border: none;border-radius: 8px;cursor: pointer;font-size: 14px;display: flex;align-items: center;gap: 6px;}
@@ -260,10 +268,23 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 
 .modelPopup{     --bs-modal-width: 640px;}
 
+.txtCon{ color: #6b6b6b;}
+.txtCon a{ color: #17bbef;}
+
 .specsTable.popupTable tr{ width: 100%;}
 .popupTable.specsTable tbody { border: none;}
 .specsTable tr td{ border: none; border-bottom: 1px solid #e8e8e8;}
-   
+
+.footerSocialMediaSection .SocialMediaMobile{display: none;}
+
+.checkboxInput label::after, .checkboxInput label::before { content: ''; position: absolute; height: 20px; width: 20px; top: 0; bottom: 0; margin: auto;}
+.checkboxInput label::before { border-radius: 4px; border: 1px solid #333; left: 0;}
+.checkboxInput label::after { background: url(../images/checkTick.svg) 0 0 / contain no-repeat; left: 5px; top: 3px; height: 10px; width: 10px; opacity: 0; }
+.checkboxInput label { padding-left: 24px; font-size: 14px; color: var(--GrayScale-600); position: relative; }
+.checkboxInput input:checked+label::after {  opacity: 1;  filter: brightness(4.5);}
+.checkboxInput input{ display: none;}
+.checkboxInput :checked+label::before{ background-color: #000;}
+
 @media(width <= 991.98px) {  
     .mainTitle h2{ font-size: 28px;}   
     .mainTitle p{ font-size: 16px;}
@@ -289,7 +310,7 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
      .productSpec .productSpecBox{ gap: 30px;}
      
     .navigation{ display: none;}
-    .mobileNavigationSection{ display: block; padding: 20px 0; overflow: hidden;}
+    .mobileNavigationSection{ display: block; padding: 20px 0; }
     .mobileNavigation{ display: flex; align-items: center; justify-content: space-between;}
     .mobileNavigation .mainLogo{ max-width: 140px;}
     .mobileNavigation .mobileToggleMenu{height: 30px; width: 30px; border: 1px solid #17bbef; color: #17bbef; border-radius: 30px; padding: 5px; display: flex; align-items: center; justify-content: center; background-color: transparent;}
@@ -316,7 +337,26 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
     .headphonesSubNav{ width: calc(33.33% - 10px);}
     .headphonesSubNav p{ color: #000;}
     .exploreFlex .exploreLink{ width: 100%;}
-    
+
+    .plusSign{ position: relative; height: 10px; width: 10px; display: block;}
+    .plusSign:before { content: ""; position: absolute; height: 2px; width: 100%; top: 50%; margin-top: -1px; background: #fff; transform: scaleY(1); transition: transform .3s; }
+    .plusSign:after { content: ""; position: absolute; height: 100%; width: 2px; left: 50%; margin-left: -1px; background: #fff;}
+    .footer_Links p{ display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #999; padding-bottom: 10px;}
+    .footerSection .footer_container .footer_Links{ width: 100%; gap: 0;}
+    .footerSection .footer_container .footer_Links ul{ margin-left: 10px; max-height: 0; opacity: 0; transition: all 0.3s linear;}
+    .footerSection .footer_container .footer_Links.show ul{ max-height: 300px; opacity: 1;}
+    .footerSection .footer_container .footer_Links ul li{  border-bottom: 1px solid #999;}
+    .footerSection .footer_container .footer_Links li:has(a.playstore){display: none;}
+    .footerSection .footer_container .footer_Links p .plusSign{ transition: all 0.3s linear; }
+    .footerSection .footer_container .footer_Links.show p .plusSign{ transform: rotate(180deg); }
+    .footerSection .footer_container .footer_Links.show p .plusSign:after{ display: none;}
+    .footerSection .footer_container .footer_Links:has(.socialMedia){ display: none;}
+    .footerSocialMediaSection .SocialMediaMobile{display: block; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;}
+    .footerSocialMediaSection .SocialMediaMobile ul{ display: flex; gap: 10px; margin: 0; padding: 0; list-style: none;}
+    .appStoreLinkMobile{  margin-left: 10px; padding-left: 10px; border-left: 1px solid #333;}
+    .appStoreLinkMobile p{ margin-bottom: 10px;}
+        a.playstore{ padding: 10px;}
+
 }
 @media(width <= 767.98px) {
     body{     background-size: 300px;  background-position: right bottom;}
@@ -355,6 +395,14 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
     .quiettheCrowd img:first-child{ display: none;}
     .specsTable tr{ width: 100%;}
     .headphonesSubNav{ width: calc(50% - 7.5px);}
+    .footerSocialMediaSection .SocialMediaMobile{ flex-direction: column;}
+    .appStoreLinkMobile{  margin-left: 0px; padding-left: 0px; border-left: none; width: fit-content; margin: 0 auto; margin-top: 20px;}
+    .appStoreLinkMobile .appStoreLinkMobileTitle p{  position: relative; z-index: 1; background-color: #000; padding: 0 7px; width: fit-content; margin: 0 auto; }
+    .appStoreLinkMobile .appStoreLinkMobileTitle::after{ content: ''; position: absolute;  width: 100%; height: 2px; background-color: #333; inset: 0; margin: auto;}
+    .appStoreLinkMobile .appStoreLinkMobileTitle{ margin-bottom: 10px; position: relative;}
+    .clientLogoSection .clientLogo{ width: calc(25% - 15px);}
+    .fromBanner{ padding: 50px 0;}
+
 } 
 @media(width <= 567.98px) {
     .knowUsBetterBox{ width: 100%;}
@@ -362,4 +410,5 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
     .popularProductsSliderBox{ padding: 30px 0;}
     .overviewContainer .one, .overviewContainer .two{ width: 100%;}
     .formDesign .inputBox{ width: 100%;}
+    .clientLogoSection .clientLogo{ width: calc(33.33% - 13.33px);}
 }

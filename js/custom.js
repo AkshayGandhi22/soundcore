@@ -109,6 +109,11 @@ $(document).on("click", function(e) {
 $(".productViewMore").on("click", function() {
       $(".productContentView").toggleClass("show");
 });
+$(".footer_Links p").on("click", function() {
+    let parent = $(this).closest(".footer_Links");
+    $(".footer_Links").not(parent).removeClass("show");
+    parent.toggleClass("show");
+});
 
 
 
