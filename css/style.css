@@ -172,13 +172,13 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .product_Liberty_Container .productSliderSection, .product_Liberty_Container .productContent{ width: calc(50% - 45px);} 
 .product_Liberty_Container .productSliderSection{ position: sticky; top: 0; }
 .product_Liberty_Container .productSliderSection .slider-count{ position: absolute; top: 10px; right: 10px; background-color: #1f202133; padding: 2px 5px; border-radius: 2px; color: #fff; font-size: 14px;}
-.product_Liberty_Container .productContent{ display: flex; flex-direction: column; gap: 16px;}
+.product_Liberty_Container .productContent{ display: flex; flex-direction: column; gap: 20px;}
 .productContent .pricingText h3 span{ font-size: 14px; color: #ffa800; padding: 5px; border: 1px solid #ffa800; }
 .productContent .pricingText h3 { display: flex; align-items: center; gap: 10px;}
 .color_radio h5{ font-weight: 700; }
 .color_radio h5 span{ font-size: 16px; color: #777;}
 .color_radio .color_radio_input label input{ display: none;}
-.color_radio .color_radio_input { display: flex; gap: 25px;}
+.color_radio .color_radio_input { margin-top: 10px; display: flex; gap: 25px;}
 .color_radio .color_radio_input label img{ height: 36px; }
 .color_radio .color_radio_input label { padding: 5px; border: 1px solid transparent; border-radius: 50px;}
 .color_radio .color_radio_input label:has(input:checked){ border-color: #17bbef;}
@@ -245,6 +245,24 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .productSliderBottom .banner-radio input{ display: none;}
 .productSliderBottom .banner-radio label{ padding: 5px 10px; font-size: 14px; font-weight: 700; border-radius: 40px; color: #333;}
 .productSliderBottom .banner-radio label:has(input:checked){ background-color: #333; color: #fff;}
+
+.offerBox{ background-color: #E6FAFF; overflow: hidden; border: 8px solid #8AE4FE; border-radius: 10px; display: flex; flex-wrap: wrap;  min-height: 94px; margin-top: 10px; }
+.offerBox .offerText{ width: 35%; position: relative; padding: 5px; display: flex;  align-items: center; justify-content: center; color: #17bbef; border-right: 1px dotted #8AE4FE;}
+.offerBox .offerText::after, .offerBox .offerText::before{ content: ''; height: 20px; width: 20px; border-radius: 20px;  background-color: #8AE4FE; position: absolute; top: -12px; right: -10px;}
+.offerBox .offerText::after{ top: auto; bottom: -10px;}
+.offerBox .offerBoxSubContent{ width: 65%; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;}
+.offerBox .offerBoxSubContent .offerBoxSubIcon button{ height: 20px; min-width: 20px; width: 20px;}
+.offerBox .offerBoxSubContent .offerBoxSubIcon button img{ height: 100%; width: 100%; min-width: 20px; height: 20px;}
+.offerBox .offerBoxSubContent .offerBoxSubText p:first-child{ font-weight: 700; margin-bottom: 5px;}
+.offerBox .offerBoxSubContent .offerBoxSubText p a{ color: #17bbef; text-decoration: underline;}
+
+.plainButton{ border: none; background-color: transparent; }
+
+.modelPopup{     --bs-modal-width: 640px;}
+
+.specsTable.popupTable tr{ width: 100%;}
+.popupTable.specsTable tbody { border: none;}
+.specsTable tr td{ border: none; border-bottom: 1px solid #e8e8e8;}
    
 @media(width <= 991.98px) {  
     .mainTitle h2{ font-size: 28px;}   

@@ -408,7 +408,7 @@
                                 <input type="radio" name="banner" value="1"> Scenarios
                             </label>
                         </div>
-                        <button>Specs</button>
+                        <button data-bs-toggle="modal" data-bs-target="#specs">Specs</button>
                     </div>
                 </div>
                 <div class="productContent">
@@ -424,6 +424,23 @@
                             <label for="white"><img src="images/white.webp" alt=""> <input type="radio" name="color" id="white"></label>
                             <label for="blue"><img src="images/navy-blue.png" alt=""> <input type="radio" name="color" id="blue"></label>
                             <label for="apricot"><img src="images/apricot.webp" alt=""> <input type="radio" name="color" id="apricot"></label>
+                        </div>
+                    </div>
+                    <div class="offerSection">
+                        <h5>Hurry！Offer Ends Soon</h5>
+                        <div class="offerBox">
+                            <div class="offerText">
+                                    <h3>10% OFF</h3>
+                            </div>
+                            <div class="offerBoxSubContent">
+                                <div class="offerBoxSubText">
+                                    <p>Code: WS24A3957BTS9 <a href="#">COPY</a></p>
+                                    <p class="small">Ends in 6 Days 19:10:20</p>
+                                </div>
+                                <div class="offerBoxSubIcon">
+                                    <button class="plainButton" data-bs-toggle="modal" data-bs-target="#Info"><img src="images/info.png" alt="info"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="buyNowSection">
@@ -501,6 +518,95 @@
             </div>
         </div>
     </div>
+
+    <!-- specs Popup -->
+    <div class="modal fade modelPopup" id="specs" tabindex="-1" aria-labelledby="specsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Specs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="specsTable popupTable">
+                        <tr>
+                            <td>Drivers</td>
+                            <td>9.2mm Wool-Paper Diaphragm Drivers</td>
+                        </tr>
+                        <tr>
+                            <td>Playtime</td>
+                            <td>12H/ 48H</td>
+                        </tr>
+                        <tr>
+                            <td>Sound</td>
+                            <td>Hi-Fi Sound with Wool-Paper Diaphragms</td>
+                        </tr>
+                        <tr>
+                            <td>Water Resistance</td>
+                            <td>IP55</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth Version</td>
+                            <td>5.4</td>
+                        </tr>
+                        <tr>
+                            <td>Active Noise Cancellation</td>
+                            <td>Adaptive ANC 3.0</td>
+                        </tr>
+                        <tr>
+                            <td>Fast Charging</td>
+                            <td>10 Mins = 5 Hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Calls</td>
+                            <td>6 Mics with Al</td>
+                        </tr>
+                        <tr>
+                            <td>Multipoint Connection</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Customized EQ</td>
+                            <td>HearID 4.0</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>4.6g (Without case)</td>
+                        </tr>
+                        <tr>
+                            <td>Special Features</td>
+                            <td>Dolby Audio</td>
+                        </tr>
+                        <tr>
+                            <td>Design</td>
+                            <td>In-Ear</td>
+                        </tr>
+                        <tr>
+                            <td>Control</td>
+                            <td>Earbud Stem Control</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- specs Popup -->
+    <!-- Info Popup -->
+    <div class="modal fade modelPopup" id="Info" tabindex="-1" aria-labelledby="InfoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Discount Code FAQ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Info Popup -->
+
     <div class="padT100">
         <div class="container">
             <div class="mainTitle left">
