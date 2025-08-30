@@ -20,15 +20,19 @@ img{ max-width: 100%;}
 .textBtn svg{ height: 16px;}
 
 .navigation{ padding: 20px 0; position: relative; z-index: 2; background-color: #fff;}
-.subnavigation{ display: none;}
 .navigationSection { display: flex; flex-wrap: wrap; align-items: center; gap: 20px;}
 .navigationSection .mainLogo img{ max-width: 200px;}
 .navigationSection .navigationMenu{ margin-left: 44px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center; flex: 1;}
 .navigationSection .navigationMenu a{ color: #000; font-size: 14px; font-weight: 700; padding: 30px 0;}
-.navigationSection .navigationMenu .navigationLink:hover .nav_link  + .subnavigation{ display: block; position: absolute; top: 100%; width: 100%; z-index: 1; left: 0; background-color: #fff; border-top: 1px solid #bdbdbd; border-radius: 0 0 16px 16px;}
+.navigationSection .navigationMenu a:hover{ color: #17bbef;}
+.navigationSection .navigationMenu .navigationLink .nav_link + .subnavigation { opacity: 0; visibility: hidden; transform: translateY(-10px); position: absolute; top: 100%; left: 0; width: 100%; z-index: 1; background-color: #fff; border-top: 1px solid #bdbdbd; border-radius: 0 0 16px 16px; transition: all 0.4s ease; pointer-events: none; }
+.navigationSection .navigationMenu .navigationLink:hover .nav_link + .subnavigation { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto;}
 .subnavigation .subnavigationLinks{ display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding-top: 50px; padding-bottom: 30px; }
-.subnavigation .subnavigationLinks .sub_nav_link{ width: calc(33.33% - 13.33px); border-radius: 16px; overflow: hidden; padding: 0;}
-body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position: absolute; top: 0; width: 100%; height: 100%; background-color: #00000087;}
+.subnavigation .subnavigationLinks .sub_nav_link{ width: calc(33.33% - 13.33px); border-radius: 16px; overflow: hidden; padding: 0; transform: translateY(-40px); opacity: 0; transition: all 0.5s linear;}
+.navigationSection .navigationMenu .navigationLink:hover .nav_link + .subnavigation .subnavigationLinks .sub_nav_link{ transform: translateY(0px); opacity: 1;}
+.headphonesSubNav {transform: translateY(-40px); opacity: 0; transition: all 0.5s linear;}
+.navigationSection .navigationMenu .navigationLink:hover .nav_link + .subnavigation .headphonesSubNav{ transform: translateY(0px); opacity: 1;}
+body:has(.navigationSection .navigationLink:hover .subnavigation)::after{ content: ''; position: absolute; top: 0; width: 100%; height: 100%; background-color: #00000087;}
 .mobileNavigationSection{ display: none;}
 .languageChange select{ padding: 5px 10px; padding-right: 30px; border-radius: 16px; border: 1px solid #000; appearance: none; font-size: 14px; background: url("../images/downArrow.svg") no-repeat right 8px center; background-size: 12px;}
 
@@ -145,6 +149,7 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .overviewContainer{ display: flex; flex-wrap: wrap; margin: -8px; } 
 .overviewContainer .overviewBox{ position: relative; border-radius: 16px; overflow: hidden;}
 .overviewContainer .overviewBox img{ width: 100%;}
+.overviewContainer .overviewBox img:nth-child(2){ display: none;}
 .overviewContainer .overviewBox .overviewText{ position: absolute; inset: 0; width: 100%; height: 100%; padding: 24px;}
 .overviewContainer .one{ width: 25%;  padding: 8px;}
 .overviewContainer .two{ width: 50%;  padding: 8px;}
@@ -174,6 +179,7 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .product_Liberty_Container .productContent{ display: flex; flex-direction: column; gap: 20px;}
 .productContent .pricingText h3 span{ font-size: 14px; color: #ffa800; padding: 5px; border: 1px solid #ffa800; }
 .productContent .pricingText h3 { display: flex; align-items: center; gap: 10px;}
+.productContent .titleText h3{ margin-bottom: 10px;}
 .color_radio h5{ font-weight: 700; }
 .color_radio h5 span{ font-size: 16px; color: #777;}
 .color_radio .color_radio_input label input{ display: none;}
@@ -216,16 +222,16 @@ body:has(.navigationSection .navigationLink:hover)::after{ content: ''; position
 .footerSection{ background-color: #000; padding: 100px 0; background-color: #000; margin-top: 100px; color: #fff;}
 .footerSection a{ color: #999; font-size: 14px;}
 .footerSection .footer_container{ display: flex; flex-wrap: wrap; gap: 20px;}
-.footerSection .footer_container .footer_Links{ display: flex; flex-direction: column; gap: 20px; width: calc(20% - 16px);}
+.footerSection .footer_container .footer_Links{ display: flex; flex-direction: column; gap: 20px; width: calc(25% - 15px);}
 .footerSection .footer_container .footer_Links ul{ list-style: none; padding: 0; margin: 0;}
 .footerSection .footer_container .footer_Links ul li {padding: 10px 0;}
 .footerSection .footer_container .footer_Links p{ margin-bottom: 10px; position: relative; z-index: 5;}
-a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fit-content;}
+a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fit-content; display: inline-block;}
 .socialMedia a{ height: 40px; min-width: 40px; width: 40px; border-radius: 40px; display: flex; background-color: #fff;}
 .footerSection .footer_container .footer_Links a:hover{ color: #17bbef;}
  .socialMedia { display: flex; gap: 10px; flex-wrap: wrap;}
 .footerSocialMediaSection{ padding-top: 50px; border-top: 1px solid #333; margin-top: 40px;}
-.clientLogoSection{ display: flex; flex-wrap: wrap; gap: 20px; }
+.clientLogoSection{ display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
 .clientLogoSection .clientLogo{ width:calc(14.28% - 17.14px); } 
 .clientLogoSection .clientLogo a{ display: inline-block; width: 100%;}
 .clientLogoSection .clientLogo svg{ width: 100%  !important; height: 40px !important; }
@@ -244,15 +250,16 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
 .custom-dropdown .dropdown-menu {position: absolute;top: 110%;left: 0;background: #fff;border-radius: 10px;list-style: none;padding: 8px ;margin: 0;display: none;min-width: 140px;z-index: 100;}
 .custom-dropdown .dropdown-menu li {padding: 10px 15px;cursor: pointer;transition: background 0.3s; border-radius: 5px;}
 .custom-dropdown .dropdown-menu li:hover {background: #f0f0f0;}
-.breadCrumb{ display: flex; flex-wrap: wrap; gap: 5px 10px; font-size: 12px;}
+.breadCrumb{ display: flex;  gap: 5px 10px; font-size: 12px;}
 .breadCrumb a{ color: #17bbef; font-weight: 700; margin-bottom: 15px;}
+.breadCrumb .currentpage{     white-space: nowrap; text-overflow: ellipsis;     overflow: hidden;}
 
 .productSliderBottom{ display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px;}
 .productSliderBottom button{ padding: 0; background-color: transparent; border: none; font-size: 14px; font-weight: 700;}
 .productSliderBottom .banner-radio{ display: flex; gap: 10px; max-width: 210px; background-color: #ececec; border-radius: 40px; padding: 5px;}
 .productSliderBottom .banner-radio input{ display: none;}
-.productSliderBottom .banner-radio label{ padding: 5px 10px; font-size: 14px; font-weight: 700; border-radius: 40px; color: #333;}
-.productSliderBottom .banner-radio label:has(input:checked){ background-color: #333; color: #fff;}
+.productSliderBottom .banner-radio label{ padding: 8px 12px; font-size: 14px; font-weight: 700; border-radius: 40px; color: #333;}
+.productSliderBottom .banner-radio label:has(input:checked){ background-color: #000; color: #fff;}
 
 .offerBox{ background-color: #E6FAFF; overflow: hidden; border: 8px solid #8AE4FE; border-radius: 10px; display: flex; flex-wrap: wrap;  min-height: 94px; margin-top: 10px; }
 .offerBox .offerText{ width: 35%; position: relative; padding: 5px; display: flex;  align-items: center; justify-content: center; color: #17bbef; border-right: 1px dotted #8AE4FE;}
@@ -273,7 +280,6 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
 
 .specsTable.popupTable tr{ width: 100%;}
 .popupTable.specsTable tbody { border: none;}
-.specsTable tr td{ border: none; border-bottom: 1px solid #e8e8e8;}
 
 .footerSocialMediaSection .SocialMediaMobile{display: none;}
 
@@ -291,7 +297,7 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
     .mainBannerSection .container{ padding: 0; margin: 0; max-width: 100%;}
     .mainBannerSection{ margin: 0;}
     .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner{ height: 100%; }
-    .perfectSoundProductBox.bigbanner .perfectSoundProductText{ margin-left: 50px;}
+    .perfectSoundProductBox.bigbanner .perfectSoundProductText{ margin-left: 50px; top: auto; bottom: 50px;}
     .mainSlider .perfectSoundProductBox{ border-radius: 0;}
     .perfectSoundProduct .perfectSoundProductText h2{ font-size: 24px;}
     .perfectSoundProduct .perfectSoundProductText h3{ font-size: 24px;}
@@ -309,6 +315,9 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
      .productSpec .productSpecBox .productSpecText, .productSpec .productSpecBox .productSpecImg{ width: 100%;}
      .productSpec .productSpecBox{ gap: 30px;}
      
+     .navigationContainer{ position: relative;}
+     .navigationContainer.bgTransparent{ background-color: transparent;}
+     .mainBannerSection{ margin-top: -70px;}
     .navigation{ display: none;}
     .mobileNavigationSection{ display: block; padding: 20px 0; }
     .mobileNavigation{ display: flex; align-items: center; justify-content: space-between;}
@@ -322,8 +331,8 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
     .mobileNavigationMenu.show .mobileNavigationMenuTop{transform: translateY(0);}
     .mobileNavigationMenu .mobileNavigationMenuTop .mobileTop{  display: flex; align-items: center; justify-content: space-between;}
     .mobileNavigationLink{ display: flex; flex-direction: column; gap: 30px; margin-top: 40px;}
-    .mobileNavigationLink button{ display: flex; justify-content: space-between; border: none; background-color: transparent; padding: 0; font-size: 16px; font-weight: 700; transform: translateX(-20px);  transition: all 0.5s linear; opacity: 0; }
-    .mobileNavigationMenu.show .mobileNavigationLink button{transform: none; opacity: 1; }
+    .mobileNavigationLink button, .mobileNavigationLink a{ display: flex; color: #000; justify-content: space-between; border: none; background-color: transparent; padding: 0; font-size: 16px; font-weight: 700; transform: translateX(-20px);  transition: all 0.5s linear; opacity: 0; }
+    .mobileNavigationMenu.show .mobileNavigationLink button, .mobileNavigationLink a{transform: none; opacity: 1; }
  
     .mobileNavigationLink button svg{ height: 20px;}
     .offcanvas.offcanvas-start.mobileSubMenu{ width: 100%; background-color: #f7f8fa;}
@@ -355,8 +364,14 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
     .footerSocialMediaSection .SocialMediaMobile ul{ display: flex; gap: 10px; margin: 0; padding: 0; list-style: none;}
     .appStoreLinkMobile{  margin-left: 10px; padding-left: 10px; border-left: 1px solid #333;}
     .appStoreLinkMobile p{ margin-bottom: 10px;}
-        a.playstore{ padding: 10px;}
-
+    a.playstore{ padding: 10px;}
+    .productSliderBottom button{ display: none;}
+    .productSliderBottom .banner-radio{ margin: 0 auto;}
+    .productContent .titleText h3, .productContent .pricingText h3{ font-size: 20px;}
+    .productContent .titleText p{ font-size: 14px;}
+    .offerSection h5, .color_radio h5{ font-size: 16px;}
+    .color_radio h5 span, .services_benefits .services_benefits_Box .services_benefits_text p, .want_perks_accodion .accordion-button{ font-size: 14px;}
+    .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner{ height: 400px;}
 }
 @media(width <= 767.98px) {
     body{     background-size: 300px;  background-position: right bottom;}
@@ -364,7 +379,7 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
     h2{ font-size: 30px;}
      .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img:nth-child(2){ display: block;}
     .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner img:first-child{ display: none;}
-    .mainSlider .perfectSoundProductBox.bigbanner .perfectSoundProductText{ top: 20px; bottom: auto;}
+    .mainSlider .perfectSoundProductBox.bigbanner .perfectSoundProductText{ top: 90px; bottom: auto;}
     .mainSlider .perfectSoundProductBox.bigbanner .perfectSoundProductText{ margin-left: 20px;}
     .perfectSoundProduct .perfectSoundProductBox.bigbanner .perfectSoundProductImg img:nth-child(2){display: block;}
     .perfectSoundProduct .perfectSoundProductBox{ background-color: transparent;}
@@ -391,6 +406,8 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
     .overviewContainer .one{ width: 50%;}
     .overviewContainer .overviewBox{ height: 250px;}
     .overviewContainer .overviewBox img{ height: 100%; object-fit: cover;}
+    .overviewContainer .overviewBox img:first-child{ display: none;}
+    .overviewContainer .overviewBox img:nth-child(2){ display: block;}
     .quiettheCrowd img:nth-child(2){ display: block;}
     .quiettheCrowd img:first-child{ display: none;}
     .specsTable tr{ width: 100%;}
@@ -403,12 +420,25 @@ a.playstore{ background-color: #fff; padding: 5px; border-radius: 5px; width: fi
     .clientLogoSection .clientLogo{ width: calc(25% - 15px);}
     .fromBanner{ padding: 50px 0;}
 
+    .overviewContainer .order1{ order: 1;}
+    .overviewContainer .order2{ order: 2;}
+    .overviewContainer .order3{ order: 4; width: 100%;}
+    .overviewContainer .order4{ order: 6;}
+    .overviewContainer .order5{ order: 5;}
+    .overviewContainer .order6{ order: 3;}
+    .overviewContainer .order7{ order: 7; width: 100%;}
+    .overviewContainer .overviewBox .overviewText h4{ font-size: 14px;}
+    .productSpec .productSpecBox .productSpecText h3{ font-size: 20px;}
+    .productSpec .productSpecBox .productSpecText p{ font-size: 14px;}
+    .specsTable tr td{ padding: 12px; font-size: 14px;}
+    .headphoneBrand{ margin: 0 30px;}
+        .mainSlider.slider_arrow .perfectSoundProductBox.bigbanner{ height:100%;}
+
 } 
 @media(width <= 567.98px) {
     .knowUsBetterBox{ width: 100%;}
     .knowUsBetterBox .knowUsBetterImg{ height: auto;}
     .popularProductsSliderBox{ padding: 30px 0;}
-    .overviewContainer .one, .overviewContainer .two{ width: 100%;}
     .formDesign .inputBox{ width: 100%;}
     .clientLogoSection .clientLogo{ width: calc(33.33% - 13.33px);}
 }

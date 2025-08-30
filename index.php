@@ -19,7 +19,7 @@
 <body class="<?php echo $isRTL == "rtl" ? 'rtl' : 'ltr'; ?>">
     
 
-    <div class="navigationContainer">
+    <div class="navigationContainer bgTransparent">
         <nav class="navigation">
             <div class="container">
                 <div class="navigationSection">
@@ -27,32 +27,9 @@
                         <a href="#"><img src="images/logo.webp" alt="logo"></a>
                     </div>
                     <div class="navigationMenu">
+                        
                         <div class="navigationLink">
-                            <a href="#" class="nav_link"> New Releases </a>
-                            <div class="subnavigation"> 
-                                <div class="container">
-                                    <div class="subnavigationLinks">
-                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
-                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
-                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="navigationLink">
-                            <a href="#" class="nav_link"> Back to School </a>
-                            <div class="subnavigation"> 
-                                <div class="container">
-                                    <div class="subnavigationLinks">
-                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-1.webp" alt="newReleases"></a>
-                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-2.webp" alt="newReleases"></a>
-                                        <a href="#" class="sub_nav_link"><img src="images/newReleases-3.webp" alt="newReleases"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="navigationLink">
-                            <a href="#" class="nav_link"> Headphones </a>
+                            <a href="#" class="nav_link"> Explore Products  </a>
                             <div class="subnavigation"> 
                                 <div class="container">
                                     <div class="headphoneFlex">
@@ -60,7 +37,27 @@
                                             <a href="#">
                                                 <div class="headphonesLink">
                                                     <img src="images/Headphones-1.webp" alt="Headphones">
-                                                    <p>Space One Pro</p>
+                                                    <p>Aerofit 2 AI</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>AeroClip</p>
+                                                    <p>€199.99</p>
+                                                    <span>New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="headphonesSubNav">
+                                            <a href="#">
+                                                <div class="headphonesLink">
+                                                    <img src="images/Headphones-1.webp" alt="Headphones">
+                                                    <p>soundcore C30i</p>
                                                     <p>€199.99</p>
                                                     <span>New</span>
                                                 </div>
@@ -80,7 +77,7 @@
                                             <a href="#">
                                                 <div class="headphonesLink">
                                                     <img src="images/Headphones-1.webp" alt="Headphones">
-                                                    <p>Space One Pro</p>
+                                                    <p>soundcore C40i</p>
                                                     <p>€199.99</p>
                                                     <span>New</span>
                                                 </div>
@@ -90,7 +87,7 @@
                                             <a href="#">
                                                 <div class="headphonesLink">
                                                     <img src="images/Headphones-1.webp" alt="Headphones">
-                                                    <p>Space One Pro</p>
+                                                    <p>AeroFit 2</p>
                                                     <p>€199.99</p>
                                                     <span>New</span>
                                                 </div>
@@ -100,7 +97,7 @@
                                             <a href="#">
                                                 <div class="headphonesLink">
                                                     <img src="images/Headphones-1.webp" alt="Headphones">
-                                                    <p>Space One Pro</p>
+                                                    <p>soundcore V40i</p>
                                                     <p>€199.99</p>
                                                     <span>New</span>
                                                 </div>
@@ -110,7 +107,7 @@
                                             <a href="#">
                                                 <div class="headphonesLink">
                                                     <img src="images/Headphones-1.webp" alt="Headphones">
-                                                    <p>Space One Pro</p>
+                                                    <p>soundcore V20i</p>
                                                     <p>€199.99</p>
                                                     <span>New</span>
                                                 </div>
@@ -121,40 +118,10 @@
                             </div>
                         </div>
                         <div class="navigationLink">
-                            <a href="#" class="nav_link"> Explore </a>
-                            <div class="subnavigation"> 
-                                <div class="container">
-                                    <div class="exploreFlex">
-                                        <div class="exploreLink">
-                                            <p>Brand</p>
-                                            <a href="">Our Story</a>
-                                            <a href="">Tech</a>
-                                            <a href="">Sustainability</a>
-                                            <a href="">Certified Refurbished Products</a>
-                                            <a href="">soundcoreCredits</a>
-                                            <a href="">Member Monthly Events</a>
-                                        </div>
-                                        <div class="exploreLink">
-                                            <p>Brand</p>
-                                            <a href="">Our Story</a>
-                                            <a href="">Tech</a>
-                                            <a href="">Sustainability</a>
-                                            <a href="">Certified Refurbished Products</a>
-                                            <a href="">soundcoreCredits</a>
-                                            <a href="">Member Monthly Events</a>
-                                        </div>
-                                        <div class="exploreLink">
-                                            <p>Brand</p>
-                                            <a href="">Our Story</a>
-                                            <a href="">Tech</a>
-                                            <a href="">Sustainability</a>
-                                            <a href="">Certified Refurbished Products</a>
-                                            <a href="">soundcoreCredits</a>
-                                            <a href="">Member Monthly Events</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#" class="nav_link"> Trial Survay </a>
+                        </div>
+                        <div class="navigationLink">
+                            <a href="#" class="nav_link"> Lucky Draw </a>
                         </div>
                     </div>
                     <div class="languageChange">
@@ -208,10 +175,9 @@
                         </div>
                         <div class="container">
                             <div class="mobileNavigationLink">
-                                <button data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">New Releases <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
-                                <button>Back to School <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
-                                <button data-bs-toggle="offcanvas" data-bs-target="#headphones" aria-controls="headphones">Headphones <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
-                                <button data-bs-toggle="offcanvas" data-bs-target="#explore" aria-controls="explore">Explore <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                                <button data-bs-toggle="offcanvas" data-bs-target="#headphones" aria-controls="headphones">Explore Products  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 stroke-[3]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></button>
+                                <a href="#">Trial Survay </a>
+                                <a href="#">Lucky Draw</a>
                             </div>
                         </div>
                     </div>
@@ -524,98 +490,9 @@
             </div>
         </div>
     </div>
-    <div class="padT100">
-        <div class="container">
-            <div class="mainTitle">
-                <h2>Don't Just Take Our Word For It</h2>
-                <p>Hear what others are saying about soundcore.</p>
-            </div>
-            <div class="take_Word_Slider slider_dot slider_arrow">
-                <div>
-                    <div class="knowUsBetterBox">
-                        <div class="knowUsBetterImg">
-                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
-                            <a href="">
-                                <div class="knowUsBetterText">
-                                    <h4>soundcore's Story</h4>
-                                    <p>Learn about who we are and what we stand for.</p>
-                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="knowUsBetterBox">
-                        <div class="knowUsBetterImg">
-                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
-                            <a href="">
-                                <div class="knowUsBetterText">
-                                    <h4>soundcore's Story</h4>
-                                    <p>Learn about who we are and what we stand for.</p>
-                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="knowUsBetterBox">
-                        <div class="knowUsBetterImg">
-                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
-                            <a href="">
-                                <div class="knowUsBetterText">
-                                    <h4>soundcore's Story</h4>
-                                    <p>Learn about who we are and what we stand for.</p>
-                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="knowUsBetterBox">
-                        <div class="knowUsBetterImg">
-                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
-                            <a href="">
-                                <div class="knowUsBetterText">
-                                    <h4>soundcore's Story</h4>
-                                    <p>Learn about who we are and what we stand for.</p>
-                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="padT100">
-        <div class="container">
-            <div class="mediaLogoContainer">
-                <div class="mediaLogo">
-                    <img src="images/media-1.webp" alt="">
-                </div>
-                <div class="mediaLogo">
-                    <img src="images/media-2.webp" alt="">
-                </div>
-                <div class="mediaLogo">
-                    <img src="images/media-3.webp" alt="">
-                </div>
-                <div class="mediaLogo">
-                    <img src="images/media-4.webp" alt="">
-                </div>
-                <div class="mediaLogo">
-                    <img src="images/media-5.webp" alt="">
-                </div>
-                <div class="mediaLogo">
-                    <img src="images/media-6.webp" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
-     <footer class="footerSection">
+     <footer class="footerSection mt-0">
         <div class="container">
             <div class="footer_container">
                 <div class="footer_Links">

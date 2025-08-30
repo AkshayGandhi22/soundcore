@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +16,8 @@
      <link rel="stylesheet" href="css/rtl.css">
     <?php } ?>
 </head>
-<body class="<?php echo $isRTL == "rtl" ? 'rtl' : 'ltr'; ?> productbg">
-     
+<body class="<?php echo $isRTL == "rtl" ? 'rtl' : 'ltr'; ?>">
+    
 
     <div class="navigationContainer">
         <nav class="navigation">
@@ -364,372 +363,295 @@
             </div>
         <!-- explore -->
     </div>
-    <div class="container">
-        <div class="breadCrumb">
-            <a href="#">Home</a>
-            <span>/</span>
-            <a href="#">All</a><span class="mx-[8px]">/</span>
-            <div class="currentpage">Liberty 5｜Noise-Cancelling Earbuds with Dolby Audio</div>
-        </div>
-    </div>
-    <div class="product_Liberty_Section">
-        <div class="container">
-            <div class="product_Liberty_Container">
-                <div class="productSliderSection">
-                    <div class="productSlider slider_arrow">
-                        <div>
-                            <img src="images/Liberty_5.webp" alt="Liberty_5">
-                        </div>
-                        <div>
-                            <img src="images/Liberty-2.webp" alt="Liberty">
-                        </div>
-                        <div>
-                            <img src="images/Liberty-3.webp" alt="Liberty">
-                        </div>
-                        <div>
-                            <img src="images/Liberty-4.webp" alt="Liberty">
-                        </div>
-                        <div>
-                            <img src="images/Liberty-5.webp" alt="Liberty">
-                        </div>
-                        <div>
-                            <img src="images/Liberty-6.webp" alt="Liberty">
-                        </div>
-                    </div>
-                    <div class="slider-count"></div>
-                    <div class="productSliderBottom">
-                        <div class="banner-radio">
-                            <label>
-                                <input type="radio" name="banner" value="0" checked> Products
-                            </label>
-                            <label>
-                                <input type="radio" name="banner" value="1"> Scenarios
-                            </label>
-                        </div>
-                        <button data-bs-toggle="modal" data-bs-target="#specs">Specs</button>
-                    </div>
-                </div>
-                <div class="productContent">
-                    <div class="titleText">
-                        <h3>Liberty 5｜Noise-Cancelling Earbuds with Dolby Audio</h3>
-                        <p>Enjoy Dolby Audio, long-lasting noise cancellation, and an immersive audio journey.</p>
-                    </div>
-                    <div class="pricingText">
-                        <h3>€93.99 <span> Save €9.39</span></h3>
-                    </div>
-                    <div class="offerSection">
-                        <h5>Hurry！Offer Ends Soon</h5>
-                        <div class="offerBox">
-                            <div class="offerText">
-                                    <h3>10% OFF</h3>
-                            </div>
-                            <div class="offerBoxSubContent">
-                                <div class="offerBoxSubText">
-                                    <p>Code: WS24A3957BTS9 <a href="#">COPY</a></p>
-                                    <p class="small">Ends in 6 Days 19:10:20</p>
-                                </div>
-                                <div class="offerBoxSubIcon">
-                                    <button class="plainButton" data-bs-toggle="modal" data-bs-target="#Info"><img src="images/info.png" alt="info"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="color_radio">
-                        <h5>Color: <span>Black</span></h5>
-                        <div class="color_radio_input">
-                            <label for="black"><img src="images/black.webp" alt=""> <input type="radio" name="color" id="black" checked></label>
-                            <label for="white"><img src="images/white.webp" alt=""> <input type="radio" name="color" id="white"></label>
-                            <label for="blue"><img src="images/navy-blue.png" alt=""> <input type="radio" name="color" id="blue"></label>
-                            <label for="apricot"><img src="images/apricot.webp" alt=""> <input type="radio" name="color" id="apricot"></label>
-                        </div>
-                    </div>
-                  
-                    <div class="buyNowSection">
-                        <p>Buy Now To:- <a href=""><img src="images/amazon_icon.png" alt=""></a> <a href=""><img src="images/flipkart-icon.png" alt=""></a></p>
-                    </div>
-                    <div class="productContentView show">
-                        <ul>
-                            <li><b>2x Stronger Voice Reduction:</b> With ANC 3.0 and a purpose-built acoustic cavity.</li>
-                            <li><b>Real-Time Adaptive ANC 3.0:</b> Adjusts every 0.3 seconds to ensure a quiet space.</li>
-                            <li><b>Immersive Dolby Audio:</b> Takes you to the front seat of any performance.</li>
-                            <li><b>Detail-Rich Sound:</b> Via wool-paper diaphragms and bass tubes. Supports LDAC and Hi-Res Audio.</li>
-                            <li><b>Natural, Crystal-Clear Calls:</b> With 6 mics, AI, and a wind-resistant algorithm.</li>
-                            <li><b>12H/48H ANC Off, 8H/32H ANC On:</b> A 10-minute charge gives you another 5 hours.</li>
-                        </ul>
-                        <button class="productViewMore">View <span>Less</span> <span>More</span> <img src="images/downArrow.svg" alt=""></button>
-                    </div>
-                    <div class="services_benefits">
-                        <h5>Services and benefits</h5>
-                        <div class="services_benefits_Box">
-                            <div class="services_benefits_text">
-                                <img src="images/services_benefits-1.png" alt="">
-                                <p>Fast, Shipping</p>
-                            </div>
-                            <div class="services_benefits_text">
-                                <img src="images/services_benefits-2.webp" alt="">
-                                <p>30-Day Money-Back Guarantee</p>
-                            </div>
-                            <div class="services_benefits_text">
-                                <img src="images/services_benefits-3.webp" alt="">
-                                <p>Hassle-Free Warranty</p>
-                            </div>
-                            <div class="services_benefits_text">
-                                <img src="images/services_benefits-4.png" alt="">
-                                <p>Lifetime Customer Support</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="want_perks_accodion">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Want More Perks?  <a href="#">Become a Member Now!</a>
-                                </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ol>
-                                        <li>Priority Shipping</li>
-                                        <li>Member Pricing on Selected Products</li>
-                                        <li>Birthday Gift</li>
-                                        <li>Unlock Benefits with soundcoreCredits <a href="#">Learn More</a></li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="payment_method">
-                        <p>Payment Method</p>
-                        <div class="payment_method_icon">
-                                <img src="images/icon_1.png" alt="">
-                                <img src="images/icon_2.png" alt="">
-                                <img src="images/icon_3.png" alt="">
-                                <img src="images/icon_4.png" alt="">
-                                <img src="images/icon_5.png" alt="">
-                                <img src="images/icon_6.png" alt="">
-                                <img src="images/icon_7.png" alt="">
-                                <img src="images/icon_8.png" alt="">
-                                <img src="images/icon_9.png" alt="">
-                                <img src="images/icon_10.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- specs Popup -->
-    <div class="modal fade modelPopup" id="specs" tabindex="-1" aria-labelledby="specsLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5>Specs</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <table class="specsTable popupTable">
-                        <tr>
-                            <td>Drivers</td>
-                            <td>9.2mm Wool-Paper Diaphragm Drivers</td>
-                        </tr>
-                        <tr>
-                            <td>Playtime</td>
-                            <td>12H/ 48H</td>
-                        </tr>
-                        <tr>
-                            <td>Sound</td>
-                            <td>Hi-Fi Sound with Wool-Paper Diaphragms</td>
-                        </tr>
-                        <tr>
-                            <td>Water Resistance</td>
-                            <td>IP55</td>
-                        </tr>
-                        <tr>
-                            <td>Bluetooth Version</td>
-                            <td>5.4</td>
-                        </tr>
-                        <tr>
-                            <td>Active Noise Cancellation</td>
-                            <td>Adaptive ANC 3.0</td>
-                        </tr>
-                        <tr>
-                            <td>Fast Charging</td>
-                            <td>10 Mins = 5 Hrs</td>
-                        </tr>
-                        <tr>
-                            <td>Calls</td>
-                            <td>6 Mics with Al</td>
-                        </tr>
-                        <tr>
-                            <td>Multipoint Connection</td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td>Customized EQ</td>
-                            <td>HearID 4.0</td>
-                        </tr>
-                        <tr>
-                            <td>Weight</td>
-                            <td>4.6g (Without case)</td>
-                        </tr>
-                        <tr>
-                            <td>Special Features</td>
-                            <td>Dolby Audio</td>
-                        </tr>
-                        <tr>
-                            <td>Design</td>
-                            <td>In-Ear</td>
-                        </tr>
-                        <tr>
-                            <td>Control</td>
-                            <td>Earbud Stem Control</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- specs Popup -->
-    <!-- Info Popup -->
-    <div class="modal fade modelPopup" id="Info" tabindex="-1" aria-labelledby="InfoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5>Discount Code FAQ</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="txtCon">
-                        <div style="margin-bottom: 1rem;">
-                            <p>1. How do I use the discount code?</p>
-                            <p>Copy the discount code from the product page, and then apply the discount code at check out.</p>
-                        </div>
-                        <div style="margin-bottom: 1rem;">
-                            <p>2. Can I redeem multiple discount codes?</p>
-                            <p>No. Discount codes cannot be combined.Only one code can be applied per order.</p>
-                        </div>
-                        <div style="margin-bottom: 1rem;">
-                            <p>3. Why is my discount code invalid?</p>
-                            <p>1) The discount code is not applicable to the specific items you want to buy</p>
-                            <p>2) The discount code wasn't entered correctly</p>
-                            <p>3) The discount code has expired</p>
-                            <p>4) The discount code is not from soundcore's official website</p>
-                        </div>
-                        <p>If you have any questions,please feel free to reach out to our customer service team:<a
-                                href="mailto:service@soundcore.com"
-                                style="display: inline-block;border: none;color: #00a7e1;">service@soundcore.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Info Popup -->
-
     
-    <div class="padT100">
-        <div class="quiettheCrowd">
-            <img src="images/quiettheCrowd.webp" alt="">
-            <img src="images/quiettheCrowd-1.webp" alt="">
-            <div class="quiettheCrowdText padT100 whiteText">
-                <div class="container">
-                    <div class="mainTitle">
+    <div class="mainBannerSection">
+        <div class="mainSlider slider_arrow">
+            <div>
+                <div class="perfectSoundProductBox bigbanner">
+                    <div class="perfectSoundProductImg">
+                        <img src="images/banner1.webp" alt="">
+                        <img src="images/banner1-1.webp" alt="">
+                    </div>
+                    <div class="perfectSoundProductText">
+                        <p><b>Liberty 5</b></p>
                         <h2>Quiet the Crowd, Enjoy the Journey</h2>
+                        <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
+                        <a href="#" class="button"><span>Buy Now</span></a>
                     </div>
                 </div>
             </div>
+            <div>
+                <div class="perfectSoundProductBox bigbanner whiteColor">
+                    <div class="perfectSoundProductImg">
+                        <img src="images/banner2.webp" alt="">
+                        <img src="images/banner2-2.jpg" alt="">
+                    </div>
+                    <div class="perfectSoundProductText">
+                        <p><b>Liberty 5</b></p>
+                        <h2>Quiet the Crowd, Enjoy the Journey</h2>
+                        <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
+                        <a href="#" class="button"><span>Buy Now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="perfectSoundProductBox bigbanner">
+                    <div class="perfectSoundProductImg">
+                        <img src="images/banner1.webp" alt="">
+                        <img src="images/banner1-1.webp" alt="">
+                    </div>
+                    <div class="perfectSoundProductText">
+                        <p><b>Liberty 5</b></p>
+                        <h2>Quiet the Crowd, Enjoy the Journey</h2>
+                        <p>Immersive Sound with Dolby Audio 2x Stronger Voice Reduction</p>
+                        <a href="#" class="button"><span>Buy Now</span></a>
+                    </div>
+                </div>
+            </div>
+        
         </div>
     </div>
 
+    <div class="padT100">
+        <div class="container">
+            <div class="headphoneBrand">
+                <a href="#">
+                    <img src="images/headphoneBrand.webp" alt="headphoneBrand">
+                    <img src="images/headphoneBrand-1.webp" alt="headphoneBrand">
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="padT100">
         <div class="container">
             <div class="mainTitle">
-                <h2>Specs</h2>
+                <h2>We Can't Pick a Favorite, But...</h2>
+                <p>Here are some of our most popular products</p>
             </div>
-            <table class="specsTable">
-                <tr>
-                    <td>Drivers</td>
-                    <td>9.2mm Wool-Paper Diaphragm Drivers</td>
-                </tr>
-                <tr>
-                    <td>Playtime</td>
-                    <td>12H/ 48H</td>
-                </tr>
-                <tr>
-                    <td>Sound</td>
-                    <td>Hi-Fi Sound with Wool-Paper Diaphragms</td>
-                </tr>
-                <tr>
-                    <td>Water Resistance</td>
-                    <td>IP55</td>
-                </tr>
-                <tr>
-                    <td>Bluetooth Version</td>
-                    <td>5.4</td>
-                </tr>
-                <tr>
-                    <td>Active Noise Cancellation</td>
-                    <td>Adaptive ANC 3.0</td>
-                </tr>
-                <tr>
-                    <td>Fast Charging</td>
-                    <td>10 Mins = 5 Hrs</td>
-                </tr>
-                <tr>
-                    <td>Calls</td>
-                    <td>6 Mics with Al</td>
-                </tr>
-                <tr>
-                    <td>Multipoint Connection</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Customized EQ</td>
-                    <td>HearID 4.0</td>
-                </tr>
-                <tr>
-                    <td>Weight</td>
-                    <td>4.6g (Without case)</td>
-                </tr>
-                <tr>
-                    <td>Special Features</td>
-                    <td>Dolby Audio</td>
-                </tr>
-                <tr>
-                    <td>Design</td>
-                    <td>In-Ear</td>
-                </tr>
-                <tr>
-                    <td>Control</td>
-                    <td>Earbud Stem Control</td>
-                </tr>
-            </table>
+            <div class="popularProductsSliderBox">
+                <div class="popularProductsSlider slider_arrow">
+                    <div>
+                        <div class="popularProductsBox">
+                            <img src="images/product1.webp" alt="product">
+                            <div class="popularProductsText">
+                                <p><b>Liberty 4 NC | True-Wireless</b></p>
+                                <p>All-New True-Wireless Earbuds Reduce</p>
+                                <div class="priceSection">
+                                    <p>€79.99 <span>€169.99</span></p>
+                                    <a href="#" class="button">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-[22px] w-[22px]"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"></path></svg> 
+                                            €79.99
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="popularProductsBox">
+                            <img src="images/product1.webp" alt="product">
+                            <div class="popularProductsText">
+                                <p><b>Liberty 4 NC | True-Wireless</b></p>
+                                <p>All-New True-Wireless Earbuds Reduce</p>
+                                <div class="priceSection">
+                                    <p>€79.99 <span>€169.99</span></p>
+                                    <a href="#" class="button">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-[22px] w-[22px]"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"></path></svg> 
+                                            €79.99
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="popularProductsBox">
+                            <img src="images/product1.webp" alt="product">
+                            <div class="popularProductsText">
+                                <p><b>Liberty 4 NC | True-Wireless</b></p>
+                                <p>All-New True-Wireless Earbuds Reduce</p>
+                                <div class="priceSection">
+                                    <p>€79.99 <span>€169.99</span></p>
+                                    <a href="#" class="button">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-[22px] w-[22px]"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"></path></svg> 
+                                            €79.99
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="popularProductsBox">
+                            <img src="images/product1.webp" alt="product">
+                            <div class="popularProductsText">
+                                <p><b>Liberty 4 NC | True-Wireless</b></p>
+                                <p>All-New True-Wireless Earbuds Reduce</p>
+                                <div class="priceSection">
+                                    <p>€79.99 <span>€169.99</span></p>
+                                    <a href="#" class="button">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-[22px] w-[22px]"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"></path></svg> 
+                                            €79.99
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
-    <footer class="footerSection">
+    
+
+    <div class="World_leading_Section">
+        <div class="container">
+            <div class="World_leading_Container">
+                <div class="World_leading_box">
+                    <img src="images/data-icon-1.webp" alt="icon">
+                    <p>Incredible sound loved by 30 million+ people.</p>
+                </div>
+                <div class="line"></div>
+                <div class="World_leading_box">
+                    <img src="images/data-icon-2.webp" alt="icon">
+                    <p>World-leading audio technology, including SweatGuard, BassUp, ACAA, and HearID.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="padT100">
+        <div class="container">
+            <div class="mainTitle">
+                <h2>Don't Just Take Our Word For It</h2>
+                <p>Hear what others are saying about soundcore.</p>
+            </div>
+            <div class="take_Word_Slider slider_dot slider_arrow">
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="knowUsBetterBox">
+                        <div class="knowUsBetterImg">
+                            <img src="images/endorse-1-pc.webp" alt="endorse-1-pc">
+                            <a href="">
+                                <div class="knowUsBetterText">
+                                    <h4>soundcore's Story</h4>
+                                    <p>Learn about who we are and what we stand for.</p>
+                                    <span class="textBtn">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-block size-[16px] transition-all duration-500 group-hover/link:ml-[12px]"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="padT100">
+        <div class="container">
+            <div class="mediaLogoContainer">
+                <div class="mediaLogo">
+                    <img src="images/media-1.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-2.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-3.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-4.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-5.webp" alt="">
+                </div>
+                <div class="mediaLogo">
+                    <img src="images/media-6.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <footer class="footerSection">
         <div class="container">
             <div class="footer_container">
                 <div class="footer_Links">
-                    <p>Products <i class="plusSign"></i></p>
+                    <p>Brand <i class="plusSign"></i></p>
                     <ul>
-                        <li><a href="#">Aerofit 2 AI </a></li>
-                        <li><a href="#">AeroClip</a></li>
-                        <li><a href="#">soundcore C30i</a></li>
-                        <li><a href="#">soundcore C40i</a></li>
-                        <li><a href="#">AeroFit 2</a></li>
-                        <li><a href="#">soundcore V40i</a></li>
-                        <li><a href="#">soundcore V20i</a></li>
+                        <li><a href="#">soundcore's Story</a></li>
+                        <li><a href="#">Where to Buy</a></li>
                     </ul>
                 </div>
                 <div class="footer_Links">
-                    <p>Information pages <i class="plusSign"></i></p>
+                    <p>Headphones <i class="plusSign"></i></p>
                     <ul>
-                        <li><a href="#">Term & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">FeedBack</a></li>
+                        <li><a href="#">Over Ear Headphones</a></li>
+                        <li><a href="#">Space One Pro</a></li>
+                        <li><a href="#">Q30</a></li>
+                        <li><a href="#">Space Q45</a></li>
+                    </ul>
+                </div>
+                <div class="footer_Links">
+                    <p>Earbuds <i class="plusSign"></i></p>
+                    <ul>
+                        <li><a href="#">TWS Earbuds</a></li>
+                        <li><a href="#">ANC Earbuds</a></li>
+                        <li><a href="#">Sleep A20</a></li>
+                        <li><a href="#">Liberty 4 NC</a></li>
+                        <li><a href="#">Sport X20</a></li>
+                    </ul>
+                </div>
+                <div class="footer_Links">
+                    <p>Others <i class="plusSign"></i></p>
+                    <ul>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Education Discount</a></li>
+                        <li><a href="#">soundcoreCredits</a></li>
+                        <li><a href="#" class="playstore"><img src="images/icon_googleplay.svg" alt=""></a></li>
+                        <li><a href="#" class="playstore"><img src="images/icon_appstore.svg" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="footer_Links">
@@ -762,6 +684,15 @@
                             <a href="#"><img src="images/icon_instagram.svg" alt=""></a>
                             <a href="#"><img src="images/icon_linkedin.svg" alt=""></a>
                             <a href="#"><img src="images/icon_twitter.svg" alt=""></a>
+                        </div>
+                        <div class="appStoreLinkMobile">
+                            <div class="appStoreLinkMobileTitle">
+                                <p>App</p>
+                            </div>
+                            <ul>
+                                <li><a href="#" class="playstore"><img src="images/icon_googleplay.svg" alt=""></a></li>
+                                <li><a href="#" class="playstore"><img src="images/icon_appstore.svg" alt=""></a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="clientLogoSection">
@@ -877,10 +808,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
 </body>
-
 </html>

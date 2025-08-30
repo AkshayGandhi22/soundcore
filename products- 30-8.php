@@ -627,7 +627,78 @@
     </div>
     <!-- Info Popup -->
 
-    
+    <div class="padT100">
+        <div class="container">
+            <div class="mainTitle left">
+                <h3>Overview</h3>
+            </div>
+            <div class="overviewContainer">
+                <div class="three order1">
+                    <div class="overviewBox ">
+                        <img src="images/overview-1.webp" alt="overview">
+                        <img src="images/overview-1-1.webp" alt="overview">
+                        <div class="overviewText">
+                            <h4>Silences Noise in Real Time</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="one order2">
+                    <div class="overviewBox ">
+                        <img src="images/overview-2.webp" alt="overview">
+                        <img src="images/overview-2-2.webp" alt="overview">
+                        <div class="overviewText">
+                            <h4>Ultra-Long Battery Life</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="two order3">
+                    <div class="overviewBox whiteText ">
+                        <img src="images/overview-3.webp" alt="overview">
+                        <img src="images/overview-3-3.webp" alt="overview">
+                        <div class="overviewText">
+                            <h4>Immersive Dolby Audio</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="two order4">
+                    <div class="overviewBox ">
+                        <img src="images/overview-4.webp" alt="overview">
+                        <img src="images/overview-4-4.webp" alt="overview">
+                        <div class="overviewText">
+                            <h4>Electrifying, Crisp Highs</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="one order5">
+                    <div class="overviewBox ">
+                        <img src="images/overview-5.webp" alt="overview">
+                        <img src="images/overview-5-5.webp" alt="overview">
+                        <div class="overviewText">
+                            <h4>Thunderous Bass</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="one order6">
+                    <div class="overviewBox ">
+                        <img src="images/overview-6.webp" alt="overview">
+                        <img src="images/overview-6-6.webp" alt="overview">
+                        <div class="overviewText">
+                            <h4>IP55 Water and Dust-Resistant</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="two order7">
+                    <div class="overviewBox ">
+                        <img src="images/overview-7.webp" alt="overview">
+                        <img src="images/overview-7-7.webp" alt="overview">
+                        <div class="overviewText">
+                            <h4>Crystal-Clear Calls</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="padT100">
         <div class="quiettheCrowd">
             <img src="images/quiettheCrowd.webp" alt="">
@@ -641,7 +712,97 @@
             </div>
         </div>
     </div>
-
+    <div class="padT100">
+        <div class="container">
+            <div class="productSpec">
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>Advanced ANC, Superior Voice Reduction</h3>
+                        <p>Adaptive ANC 3.0 adjusts noise cancellation every 0.3s³, while a purpose-built acoustic
+                            cavity dampens human voices, delivering 2x more effective voice reduction.</p>
+                        <p>3. Calculated based on the recalibration frequency of the ANC algorithm, which is three times
+                            per second when no audio is playing.</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-1.webp" alt="productSpecImg">
+                    </div>
+                </div>
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>True Awareness</h3>
+                        <p>Upgraded with two mics on each bud. Turn on Transparency mode, and you hear the world as it
+                            is—just like you're not wearing earbuds at all.</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-2.webp" alt="productSpecImg">
+                    </div>
+                </div>
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>Small Stem, Big Control</h3>
+                        <p>This little stem lets you mute, skip tracks, answer calls, and more—all faster and easier
+                            than ever.</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-3.webp" alt="productSpecImg">
+                    </div>
+                </div>
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>Ready, Pose, Snap</h3>
+                        <p>Simply tap the stem when your phone camera is ready to capture a moment. No awkward arm
+                            twisting, just a quick selfie in seconds.</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-4.webp" alt="productSpecImg">
+                    </div>
+                </div>
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>Just the Right Size for You</h3>
+                        <p>Shield your favorite tunes from noise with six sizes of ear tips, delivering a snug seal and
+                            bespoke fit for your ears.</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-5.webp" alt="productSpecImg">
+                    </div>
+                </div>
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>Sound Tailored to Your Ears</h3>
+                        <p>soundcore's HearID 4.0 assesses your hearing, compares it to the average for your age group,
+                            and tests your music taste to personalize your listening experience.</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-6.webp" alt="productSpecImg">
+                    </div>
+                </div>
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>Dual Connections, Simplified</h3>
+                        <p>Connect and juggle between two devices smoothly, even with LDAC enabled. Google Fast Pair
+                            adds convenience with auto-connection.</p>
+                        <p>Note: Google and Android are trademarks of Google LLC.</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-7.webp" alt="productSpecImg">
+                    </div>
+                </div>
+                <div class="productSpecBox">
+                    <div class="productSpecText">
+                        <h3>What's in the Box</h3>
+                        <p>· soundcore Liberty 5<br>
+                            · Charging Case<br>
+                            · Ear Tips (Size XXS/XS/S/M/L/XL)<br>
+                            · USB-C Cable</p>
+                    </div>
+                    <div class="productSpecImg">
+                        <img src="images/productSpecImg-8.webp" alt="productSpecImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="padT100">
         <div class="container">
             <div class="mainTitle">
@@ -712,24 +873,39 @@
         <div class="container">
             <div class="footer_container">
                 <div class="footer_Links">
-                    <p>Products <i class="plusSign"></i></p>
+                    <p>Brand <i class="plusSign"></i></p>
                     <ul>
-                        <li><a href="#">Aerofit 2 AI </a></li>
-                        <li><a href="#">AeroClip</a></li>
-                        <li><a href="#">soundcore C30i</a></li>
-                        <li><a href="#">soundcore C40i</a></li>
-                        <li><a href="#">AeroFit 2</a></li>
-                        <li><a href="#">soundcore V40i</a></li>
-                        <li><a href="#">soundcore V20i</a></li>
+                        <li><a href="#">soundcore's Story</a></li>
+                        <li><a href="#">Where to Buy</a></li>
                     </ul>
                 </div>
                 <div class="footer_Links">
-                    <p>Information pages <i class="plusSign"></i></p>
+                    <p>Headphones <i class="plusSign"></i></p>
                     <ul>
-                        <li><a href="#">Term & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">FeedBack</a></li>
+                        <li><a href="#">Over Ear Headphones</a></li>
+                        <li><a href="#">Space One Pro</a></li>
+                        <li><a href="#">Q30</a></li>
+                        <li><a href="#">Space Q45</a></li>
+                    </ul>
+                </div>
+                <div class="footer_Links">
+                    <p>Earbuds <i class="plusSign"></i></p>
+                    <ul>
+                        <li><a href="#">TWS Earbuds</a></li>
+                        <li><a href="#">ANC Earbuds</a></li>
+                        <li><a href="#">Sleep A20</a></li>
+                        <li><a href="#">Liberty 4 NC</a></li>
+                        <li><a href="#">Sport X20</a></li>
+                    </ul>
+                </div>
+                <div class="footer_Links">
+                    <p>Others <i class="plusSign"></i></p>
+                    <ul>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Education Discount</a></li>
+                        <li><a href="#">soundcoreCredits</a></li>
+                        <li><a href="#" class="playstore"><img src="images/icon_googleplay.svg" alt=""></a></li>
+                        <li><a href="#" class="playstore"><img src="images/icon_appstore.svg" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="footer_Links">
@@ -762,6 +938,15 @@
                             <a href="#"><img src="images/icon_instagram.svg" alt=""></a>
                             <a href="#"><img src="images/icon_linkedin.svg" alt=""></a>
                             <a href="#"><img src="images/icon_twitter.svg" alt=""></a>
+                        </div>
+                        <div class="appStoreLinkMobile">
+                            <div class="appStoreLinkMobileTitle">
+                                <p>App</p>
+                            </div>
+                            <ul>
+                                <li><a href="#" class="playstore"><img src="images/icon_googleplay.svg" alt=""></a></li>
+                                <li><a href="#" class="playstore"><img src="images/icon_appstore.svg" alt=""></a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="clientLogoSection">
